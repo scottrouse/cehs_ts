@@ -18,6 +18,9 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
         '#markup' => t('Scotts message2 here'),
         '#weight' => -5
       );
+      $form['field_employee_id'] = array(
+        '#access' => FALSE
+      );
       $form['actions']['submit']['#value'] = t('Save Me');
     // That's it. Stop checking form ids.
     break;
