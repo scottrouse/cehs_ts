@@ -1,0 +1,5 @@
+name = CEHS Timesheet
+description = A custom timesheet module for the Center for Environmental Health Sciences at the University of Montana.
+package = CEHS Timesheet
+core = 7.x
+files[] = cehs_timesheet.module

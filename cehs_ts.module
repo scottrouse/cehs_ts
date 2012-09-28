@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * @todo what does this file do?
+ */
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Alters the display of the node/add form for the Timesheets
+ */
+function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'foo') {
+    $form['warning'] = array(
+      '#markup' => t('warning here'),
+      '#weight' => -5
+    );
+    $form['submit']['#value'] = t('foo');
+  }
+}
