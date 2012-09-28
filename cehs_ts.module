@@ -11,11 +11,15 @@
  * Alters the display of the node/add form for the Timesheets
  */
 function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'foo') {
-    $form['warning'] = array(
-      '#markup' => t('warning here'),
-      '#weight' => -5
-    );
-    $form['submit']['#value'] = t('foo');
+  // switch will let us use different alters for each of the three timesheet forms
+  switch ($form_id) {
+    case 'ts_biweekly_node_form':
+      $form['warning'] = array(
+        '#markup' => t('Scotts message2 here'),
+        '#weight' => -5
+      );
+      $form['actions']['submit']['#value'] = t('Save Me');
+    // That's it. Stop checking form ids.
+    break;
   }
 }
