@@ -54,14 +54,6 @@
   $day29 = $start_date+($day*28);
   $day30 = $start_date+($day*29);
   $day31 = $start_date+($day*30);
-  
-  $day1_day = date($format_day, $start_date);
-  $day2_day = strtotime(date($format_day, $start_date . " +1 day"));
-
-  $date1 = strtotime($start_date_raw);
-  $date2 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +1 day");
-  $date11 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +10 days");
-  $date12 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +11 days");
 
 ?>
 
@@ -78,13 +70,7 @@
 <p>Date unix: <?php echo(date('U',$start_date))?></p>
 <p>Date unix2: <?php echo(strtotime($start_date))?></p>
 
-<p>$day1_day: <?php echo($day1_day)?></p>
-<p>$day2_day: <?php echo($day2_day)?></p>
 <p>$start_date_raw: <?php echo($start_date_raw)?></p>
-<p>$date1: <?php echo($date1)?></p>
-<p>$date2: <?php echo($date2)?></p>
-<p>$date11: <?php echo($date11)?></p>
-<p>$date12: <?php echo($date12)?></p>
 
 </div>
 
