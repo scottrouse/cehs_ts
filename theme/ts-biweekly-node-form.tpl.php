@@ -9,8 +9,8 @@
   /* $pay_period_start2 = field_view_value('node', $node, 'field_period_dates', $field[0]); */
   $pay_period_start3 = field_get_items('node', $node, 'field_period_dates');
   $start_date = strtotime($pay_period_start3['0']['value']);
-
-?>  
+  $start_date_raw = $pay_period_start3['0']['value'];
+?>
 
 
 <?php
@@ -23,23 +23,23 @@
   /* $employee_name = 'Scott Rouse'; */
   
   $day1 = $start_date;
-  $day2 = $start_date+$day;
-  $day3 = $start_date+($day*2);
-  $day4 = $start_date+($day*3);
-  $day5 = $start_date+($day*4);
-  $day6 = $start_date+($day*5);
-  $day7 = $start_date+($day*6);
-  $day8 = $start_date+($day*7);
-  $day9 = $start_date+($day*8);
-  $day10 = $start_date+($day*9);
-  $day11 = $start_date+($day*10);
-  $day12 = $start_date+($day*11);
-  $day13 = $start_date+($day*12);
-  $day14 = $start_date+($day*13);
-  $day15 = $start_date+($day*14);
-  $day16 = $start_date+($day*15);
-  $day17 = $start_date+($day*16);
-  $day18 = $start_date+($day*17);
+  $day2 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +1 day");
+  $day3 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +2 days");
+  $day4 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +3 days");
+  $day5 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +4 days");
+  $day6 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +5 days");
+  $day7 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +6 days");
+  $day8 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +7 days");
+  $day9 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +8 days");
+  $day10 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +9 days");
+  $day11 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +10 days");
+  $day12 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +11 days");
+  $day13 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +12 days");
+  $day14 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +13 days");
+  $day15 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +14 days");
+  $day16 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +15 days");
+  $day17 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +16 days");
+  $day18 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +17 days");
   $day19 = $start_date+($day*18);
   $day20 = $start_date+($day*19);
   $day21 = $start_date+($day*20);
@@ -53,6 +53,7 @@
   $day29 = $start_date+($day*28);
   $day30 = $start_date+($day*29);
   $day31 = $start_date+($day*30);
+
 ?>
 
 
@@ -67,6 +68,8 @@
 <p>$startdate: <?php echo($start_date)?></p>
 <p>Date unix: <?php echo(date('U',$start_date))?></p>
 <p>Date unix2: <?php echo(strtotime($start_date))?></p>
+
+<p>$start_date_raw: <?php echo($start_date_raw)?></p>
 
 </div>
 
