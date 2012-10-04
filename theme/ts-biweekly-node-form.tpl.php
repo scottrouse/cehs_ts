@@ -148,13 +148,13 @@
   <thead>
     <tr>
       <td></td>
-      <th abbr="Sunday, mm/dd">Sunday<br /><?php print date($format_long, ($start_date+($day*7)))?></th>
-      <th abbr="Monday, mm/dd">Monday<br /><?php print date($format_long, ($start_date+($day*8)))?></th>
-      <th abbr="Tuesday, mm/dd">Tuesday<br /><?php print date($format_long, ($start_date+($day*9)))?></th>
-      <th abbr="Wednesday, mm/dd">Wednesday<br /><?php print date($format_long, ($start_date+($day*10)))?></th>
-      <th abbr="Thursday, mm/dd">Thursday<br /><?php print date($format_long, ($start_date+($day*11)))?></th>
-      <th abbr="Friday, mm/dd">Friday<br /><?php print date($format_long, ($start_date+($day*12)))?></th>
-      <th abbr="Saturday, mm/dd">Saturday<br /><?php print date($format_long, ($start_date+($day*13)))?></th>
+      <th abbr="Sunday, mm/dd"><?php print date($format_day, $day8)?><br /><?php print date($format_long, $day8) ?></th>
+      <th abbr="Monday, mm/dd"><?php print date($format_day, $day9)?><br /><?php print date($format_long, $day9) ?></th>
+      <th abbr="Tuesday, mm/dd"><?php print date($format_day, $day10)?><br /><?php print date($format_long, $day10) ?></th>
+      <th abbr="Wednesday, mm/dd"><?php print date($format_day, $day11)?><br /><?php print date($format_long, $day11) ?></th>
+      <th abbr="Thursday, mm/dd"><?php print date($format_day, $day12)?><br /><?php print date($format_long, $day12) ?></th>
+      <th abbr="Friday, mm/dd"><?php print date($format_day, $day13)?><br /><?php print date($format_long, $day13) ?></th>
+      <th abbr="Saturday, mm/dd"><?php print date($format_day, $day14)?><br /><?php print date($format_long, $day14) ?></th>
     </tr>
   </thead>
   <tbody>
