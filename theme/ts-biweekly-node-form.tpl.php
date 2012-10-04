@@ -53,7 +53,6 @@
   $day29 = $start_date+($day*28);
   $day30 = $start_date+($day*29);
   $day31 = $start_date+($day*30);
-  // @brad - keep this going here. You may as well go all the way to $day31 for other content types
 ?>
 
 
