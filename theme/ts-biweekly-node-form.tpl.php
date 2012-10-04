@@ -92,9 +92,9 @@
       <th abbr="Monday, mm/dd"><?php print date($format_day, $day2)?><br /><?php print date($format_long, $day2)?></th>
       <th abbr="Tuesday, mm/dd"><?php print date($format_day, $day3)?><br /><?php print date($format_long, $day3)?></th>
       <th abbr="Wednesday, mm/dd"><?php print date($format_day, $day4)?><br /><?php print date($format_long, $day4)?></th>
-      <th abbr="Thursday, mm/dd"><?php print date($format_day, $start_date)?><br /><?php print date($format_long, ($start_date+($day*4)))?></th>
-      <th abbr="Friday, mm/dd"><?php print date($format_day, $start_date)?><br /><?php print date($format_long, ($start_date+($day*5)))?></th>
-      <th abbr="Saturday, mm/dd"><?php print date($format_day, $start_date+($day*6))?><br /><?php print date($format_long, ($start_date+($day*6)))?></th>
+      <th abbr="Thursday, mm/dd"><?php print date($format_day, $day5)?><br /><?php print date($format_long, $day5)?></th>
+      <th abbr="Friday, mm/dd"><?php print date($format_day, $day6)?><br /><?php print date($format_long, $day6)?></th>
+      <th abbr="Saturday, mm/dd"><?php print date($format_day, $day7)?><br /><?php print date($format_long, $day7?></th>
     </tr>
   </thead>
   <tbody>
