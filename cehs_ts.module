@@ -49,13 +49,29 @@ $r01 = $form['field_r01'] = array(
                       ))
       );
 */
-/*
       $form['field_r02'] = array(
-          '#type' => 'textfield',
-          '#default_value' => 'r02',
+          '#type' => 'container',
+          '#attributes' => array(
+            'class' => array(
+              '0' => 'field-type-number-decimal',
+              '1' => 'field-name-field-r02',
+              '2' => 'field-widget-number'
+            ),
+          ),
+          '#weight' => '5',
+          '#tree' => TRUE,
+          '#language' => 'und',
+          'und' => array(
+            '0' => array(
+              'value' => array(
+                
+              ),
+            ),
+          ),
+          '#access' => TRUE,
+          '#default_value' => '8.00',
           '#size' => 4
       );
-*/
       /* $form['actions']['submit']['#value'] = t('Save Me'); */
     // That's it. Stop checking form ids.
     break;
@@ -94,18 +110,16 @@ function cehs_ts_theme() {
 /**
  * Rebuild the totals for each day using AJAX after a field is edited.
  */
-/* function cehs_ts_totals($form, &$form_state) { */
+function cehs_ts_totals($form, &$form_state) {
   // Since the form builder is called after every AJAX request, we rebuild
   // the form based on $form_state.
 /*   $num_checkboxes = !empty($form_state['values']['howmany_select']) ? $form_state['values']['howmany_select'] : 1; */
   
- /*
- $form['field_r01'] = array(
+  $form['field_r01'] = array(
     '#type' => 'textfield',
     '#default_value' => 'r01',
     '#size' => 1
   );
-*/
 
 /*
   $form['howmany_select'] = array(
@@ -154,10 +168,8 @@ function cehs_ts_theme() {
   );
 */
 
-/*
   return $form;
 }
-*/
 
 /**
  * Callback element needs only select the portion of the form to be updated.
