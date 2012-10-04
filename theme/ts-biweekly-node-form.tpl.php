@@ -26,6 +26,33 @@
   $day2 = $start_date+$day;
   $day3 = $start_date+($day*2);
   $day4 = $start_date+($day*3);
+  $day5 = $start_date+($day*4);
+  $day6 = $start_date+($day*5);
+  $day7 = $start_date+($day*6);
+  $day8 = $start_date+($day*7);
+  $day9 = $start_date+($day*8);
+  $day10 = $start_date+($day*9);
+  $day11 = $start_date+($day*10);
+  $day12 = $start_date+($day*11);
+  $day13 = $start_date+($day*12);
+  $day14 = $start_date+($day*13);
+  $day15 = $start_date+($day*14);
+  $day16 = $start_date+($day*15);
+  $day17 = $start_date+($day*16);
+  $day18 = $start_date+($day*17);
+  $day19 = $start_date+($day*18);
+  $day20 = $start_date+($day*19);
+  $day21 = $start_date+($day*20);
+  $day22 = $start_date+($day*21);
+  $day23 = $start_date+($day*22);
+  $day24 = $start_date+($day*23);
+  $day25 = $start_date+($day*24);
+  $day26 = $start_date+($day*25);
+  $day27 = $start_date+($day*26);
+  $day28 = $start_date+($day*27);
+  $day29 = $start_date+($day*28);
+  $day30 = $start_date+($day*29);
+  $day31 = $start_date+($day*30);
   // @brad - keep this going here. You may as well go all the way to $day31 for other content types
 ?>
 
