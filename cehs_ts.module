@@ -11,18 +11,92 @@
  * Alters the display of the node/add form for the Timesheets
  */
 function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
+  $employee_id = 'empl id'; // field_get_items('user', $user, 'my_special_field');
+  $employee_name = '@todo - set employee name';
+  $supervisor = '@todo - get supervisor';
+  /*
+$r01 = $form['field_r01'] = array(
+                          '#type' => 'textfield',
+                          '#default_value' => 'r01',
+                          '#size' => 1
+                        );
+*/
   // switch will let us use different alters for each of the three timesheet forms
   switch ($form_id) {
     case 'ts_biweekly_node_form':
-      $form['warning'] = array(
-        '#markup' => t('Scotts message2 here'),
-        '#weight' => -5
+     /*
+ $form['field_employee_id'] = array(
+        '#type' => 'textarea',
+        '#language' => 'und',
+        '#access' => FALSE,
+        '#value' => $employee_id
       );
-      $form['field_employee_id'] = array(
-        '#access' => FALSE
+*/
+/*
+      $form['week1'] = array(
+        '#markup' => t("<table class='myclass'>
+                        <tr>
+                          <th>Sunday</th>
+                          <th>Monday</th>
+                        </tr>
+                        <tr>
+                          <td>@r01</td>
+                          <td>@r02</td>
+                        </tr>
+                      </table>", array(
+                        '@r01' => 'foo',
+                        '@r02' => 'r02',
+                      ))
       );
-      $form['actions']['submit']['#value'] = t('Save Me');
+*/
+/*
+      $form['field_r02'] = array(
+          '#type' => 'textfield',
+          '#default_value' => 'r02',
+          '#size' => 4
+      );
+*/
+      /* $form['actions']['submit']['#value'] = t('Save Me'); */
     // That's it. Stop checking form ids.
     break;
   }
 }
+
+
+
+/**
+ * Implements hook_theme().
+ *
+ * @todo - description
+ */
+/*
+function cehs_ts_theme() {
+  $items = array();
+  $items['ts_biweekly_node_form'] = array(
+    'template' => 'node-ts-biweekly-edit',
+    'path' => drupal_get_path('module', 'cehs_ts') . '/templates',
+    'render element' = 'form',
+  );
+  return $items;
+}
+*/
+
+function cehs_ts_theme() {
+    return array(
+        'ts_biweekly_node_form' => array(
+            'template' => 'ts-biweekly-node-form',
+            'render element' => 'form',
+        ),
+    );
+}
+
+/*
+function cehs_ts_theme() {
+    return array(
+        'article_node_form' => array(
+            'template' => 'article-node-form',
+            'render element' => 'form',
+        ),
+    );
+}
+*/
