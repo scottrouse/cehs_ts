@@ -94,7 +94,7 @@
       <th abbr="Wednesday, mm/dd"><?php print date($format_day, $day4)?><br /><?php print date($format_long, $day4)?></th>
       <th abbr="Thursday, mm/dd"><?php print date($format_day, $day5)?><br /><?php print date($format_long, $day5)?></th>
       <th abbr="Friday, mm/dd"><?php print date($format_day, $day6)?><br /><?php print date($format_long, $day6)?></th>
-      <th abbr="Saturday, mm/dd"><?php print date($format_day, $day7)?><br /><?php print date($format_long, $day7?></th>
+      <th abbr="Saturday, mm/dd"><?php print date($format_day, $day7)?><br /><?php print date($format_long, $day7)?></th>
     </tr>
   </thead>
   <tbody>
