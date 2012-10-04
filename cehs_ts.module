@@ -67,20 +67,8 @@ $r01 = $form['field_r01'] = array(
 /**
  * Implements hook_theme().
  *
- * @todo - description
+ * @todo - Specify the use of a template file for each node add/edit form.
  */
-/*
-function cehs_ts_theme() {
-  $items = array();
-  $items['ts_biweekly_node_form'] = array(
-    'template' => 'node-ts-biweekly-edit',
-    'path' => drupal_get_path('module', 'cehs_ts') . '/templates',
-    'render element' = 'form',
-  );
-  return $items;
-}
-*/
-
 function cehs_ts_theme() {
     return array(
         'ts_biweekly_node_form' => array(
@@ -89,14 +77,3 @@ function cehs_ts_theme() {
         ),
     );
 }
-
-/*
-function cehs_ts_theme() {
-    return array(
-        'article_node_form' => array(
-            'template' => 'article-node-form',
-            'render element' => 'form',
-        ),
-    );
-}
-*/
