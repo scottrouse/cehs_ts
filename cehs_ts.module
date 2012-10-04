@@ -76,5 +76,15 @@ function cehs_ts_theme() {
             'render element' => 'form',
             'path' => drupal_get_path('module', 'cehs_ts').'/theme'
         ),
+        'ts_monthly_node_form' => array(
+            'template' => 'ts-monthly-node-form',
+            'render element' => 'form',
+            'path' => drupal_get_path('module', 'cehs_ts').'/theme'
+        ),
+        'ts_semimonthly_node_form' => array(
+            'template' => 'ts-semimonthly-node-form',
+            'render element' => 'form',
+            'path' => drupal_get_path('module', 'cehs_ts').'/theme'
+        ),
     );
 }
