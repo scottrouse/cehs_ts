@@ -88,7 +88,7 @@
   <thead>
     <tr>
       <td></td>
-      <th abbr="Sunday, mm/dd"><?php print date($format_day, $day1)?><br /><?php print date($format_long, $day1)?></th>
+      <th abbr="<?php print date($format_day, $day1)?> , <?php print date($format_medium, $day1)?>"><?php print date($format_day, $day1)?><br /><?php print date($format_long, $day1)?></th>
       <th abbr="Monday, mm/dd"><?php print date($format_day, $day2)?><br /><?php print date($format_long, $day2)?></th>
       <th abbr="Tuesday, mm/dd"><?php print date($format_day, $day3)?><br /><?php print date($format_long, $day3)?></th>
       <th abbr="Wednesday, mm/dd"><?php print date($format_day, $day4)?><br /><?php print date($format_long, $day4)?></th>
