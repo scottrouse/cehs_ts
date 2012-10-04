@@ -33,6 +33,8 @@
 <!-- @todo - remove before publishing -->
 <div style="border:2px dashed red; padding: 10px; margin: 10px; background-color: #ccc;">
 
+<p>This is the "ts-bi-weekly-node-form.tpl.php" template file output.</p>
+
 <h2>Variables Testing</h2>
 <small>This content will be removed and is for testing purposes only.</small>
 <p>$pay_period_id: <?php echo($pay_period_id[0])?></p>
