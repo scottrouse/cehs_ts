@@ -9,7 +9,6 @@
   /* $pay_period_start2 = field_view_value('node', $node, 'field_period_dates', $field[0]); */
   $pay_period_start3 = field_get_items('node', $node, 'field_period_dates');
   $start_date = strtotime($pay_period_start3['0']['value']);
-  $start_date2 = $start_date;
   $start_date_raw = $pay_period_start3['0']['value'];
 ?>
 
