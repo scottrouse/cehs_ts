@@ -89,12 +89,12 @@
     <tr>
       <td></td>
       <th abbr="<?php print date($format_day, $day1)?>, <?php print date($format_medium, $day1)?>"><?php print date($format_day, $day1)?><br /><?php print date($format_long, $day1)?></th>
-      <th abbr="Monday, mm/dd"><?php print date($format_day, $day2)?><br /><?php print date($format_long, $day2)?></th>
-      <th abbr="Tuesday, mm/dd"><?php print date($format_day, $day3)?><br /><?php print date($format_long, $day3)?></th>
-      <th abbr="Wednesday, mm/dd"><?php print date($format_day, $day4)?><br /><?php print date($format_long, $day4)?></th>
-      <th abbr="Thursday, mm/dd"><?php print date($format_day, $day5)?><br /><?php print date($format_long, $day5)?></th>
-      <th abbr="Friday, mm/dd"><?php print date($format_day, $day6)?><br /><?php print date($format_long, $day6)?></th>
-      <th abbr="Saturday, mm/dd"><?php print date($format_day, $day7)?><br /><?php print date($format_long, $day7)?></th>
+      <th abbr="<?php print date($format_day, $day2)?>, <?php print date($format_medium, $day2)?>"><?php print date($format_day, $day2)?><br /><?php print date($format_long, $day2)?></th>
+      <th abbr="<?php print date($format_day, $day3)?>, <?php print date($format_medium, $day3)?>"><?php print date($format_day, $day3)?><br /><?php print date($format_long, $day3)?></th>
+      <th abbr="<?php print date($format_day, $day4)?>, <?php print date($format_medium, $day4)?>"><?php print date($format_day, $day4)?><br /><?php print date($format_long, $day4)?></th>
+      <th abbr="<?php print date($format_day, $day5)?>, <?php print date($format_medium, $day5)?>"><?php print date($format_day, $day5)?><br /><?php print date($format_long, $day5)?></th>
+      <th abbr="<?php print date($format_day, $day6)?>, <?php print date($format_medium, $day6)?>"><?php print date($format_day, $day6)?><br /><?php print date($format_long, $day6)?></th>
+      <th abbr="<?php print date($format_day, $day7)?>, <?php print date($format_medium, $day7)?>"><?php print date($format_day, $day7)?><br /><?php print date($format_long, $day7)?></th>
     </tr>
   </thead>
   <tbody>
@@ -148,13 +148,13 @@
   <thead>
     <tr>
       <td></td>
-      <th abbr="Sunday, mm/dd"><?php print date($format_day, $day8)?><br /><?php print date($format_long, $day8) ?></th>
-      <th abbr="Monday, mm/dd"><?php print date($format_day, $day9)?><br /><?php print date($format_long, $day9) ?></th>
-      <th abbr="Tuesday, mm/dd"><?php print date($format_day, $day10)?><br /><?php print date($format_long, $day10) ?></th>
-      <th abbr="Wednesday, mm/dd"><?php print date($format_day, $day11)?><br /><?php print date($format_long, $day11) ?></th>
-      <th abbr="Thursday, mm/dd"><?php print date($format_day, $day12)?><br /><?php print date($format_long, $day12) ?></th>
-      <th abbr="Friday, mm/dd"><?php print date($format_day, $day13)?><br /><?php print date($format_long, $day13) ?></th>
-      <th abbr="Saturday, mm/dd"><?php print date($format_day, $day14)?><br /><?php print date($format_long, $day14) ?></th>
+      <th abbr="<?php print date($format_day, $day8)?>, <?php print date($format_medium, $day8)?>"><?php print date($format_day, $day8)?><br /><?php print date($format_long, $day8) ?></th>
+      <th abbr="<?php print date($format_day, $day9)?>, <?php print date($format_medium, $day9)?>"><?php print date($format_day, $day9)?><br /><?php print date($format_long, $day9) ?></th>
+      <th abbr="<?php print date($format_day, $day10)?>, <?php print date($format_medium, $day10)?>"><?php print date($format_day, $day10)?><br /><?php print date($format_long, $day10) ?></th>
+      <th abbr="<?php print date($format_day, $day11)?>, <?php print date($format_medium, $day11)?>"><?php print date($format_day, $day11)?><br /><?php print date($format_long, $day11) ?></th>
+      <th abbr="<?php print date($format_day, $day12)?>, <?php print date($format_medium, $day12)?>"><?php print date($format_day, $day12)?><br /><?php print date($format_long, $day12) ?></th>
+      <th abbr="<?php print date($format_day, $day13)?>, <?php print date($format_medium, $day13)?>"><?php print date($format_day, $day13)?><br /><?php print date($format_long, $day13) ?></th>
+      <th abbr="<?php print date($format_day, $day14)?>, <?php print date($format_medium, $day14)?>"><?php print date($format_day, $day14)?><br /><?php print date($format_long, $day14) ?></th>
     </tr>
   </thead>
   <tbody>
