@@ -77,7 +77,7 @@ $r01 = $form['field_r01'] = array(
                 '#delta' => 0,
                 '#weight' => 0,
                 '#type' => 'textfield',
-                '#default_value' = '8.00',
+                '#default_value' => '8.00',
                 '#size' => 14,
                 '#maxlength' => 12,
                 '#number_type' => 'decimal',
