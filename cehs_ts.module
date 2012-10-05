@@ -64,9 +64,42 @@ $r01 = $form['field_r01'] = array(
           'und' => array(
             '0' => array(
               'value' => array(
-                
+                '#entity_type' => 'node',
+                '#entity' => '',
+                '#bundle' => 'ts_biweekly',
+                '#field_name' => 'field_r02',
+                '#language' => 'und',
+                '#field_parents' => array(),
+                '#columns' => array(0),
+                '#title' => 'r02',
+                '#description' => '',
+                '#required' => FALSE,
+                '#delta' => 0,
+                '#weight' => 0,
+                '#type' => 'textfield',
+                '#default_value' = '8.00',
+                '#size' => 14,
+                '#maxlength' => 12,
+                '#number_type' => 'decimal',
+                '#element_validate' => array(
+                  '0' => 'number_field_widget_validate',
+                ),
               ),
             ),
+            '#theme' =>
+            '#field_name' => 'field_r02',
+            '#cardinality' => '1',
+            '#title' => 'r02',
+            '#required' => 0,
+            '#description' => '',
+            '#prefix' => '<div id="field-r02-add-more-wrapper">'
+            '#suffix' => '</div>'
+            '#max_delta' => 0,
+            '#after_build' => array(
+              
+            ),
+            '#language' => 'und',
+            '#field_parents' => array(),
           ),
           '#access' => TRUE,
           '#default_value' => '8.00',
