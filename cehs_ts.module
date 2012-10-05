@@ -49,13 +49,61 @@ $r01 = $form['field_r01'] = array(
                       ))
       );
 */
-/*
       $form['field_r02'] = array(
-          '#type' => 'textfield',
-          '#default_value' => 'r02',
-          '#size' => 4
+          '#type' => 'container',
+          '#attributes' => array(
+            'class' => array(
+              '0' => 'field-type-number-decimal',
+              '1' => 'field-name-field-r02',
+              '2' => 'field-widget-number'
+            ),
+          ),
+          '#weight' => '',
+          '#tree' => TRUE,
+          '#language' => 'und',
+          'und' => array(
+            '0' => array(
+              'value' => array(
+                '#entity_type' => 'node',
+                '#bundle' => 'ts_biweekly',
+                '#field_name' => 'field_r02',
+                '#language' => 'und',
+                '#field_parents' => array(),
+                '#columns' => array(
+                  '0' => 'value',
+                ),
+                '#title' => '',
+                '#description' => '',
+                '#required' => FALSE,
+                '#delta' => 0,
+                '#weight' => 0,
+                '#type' => 'textfield',
+                '#default_value' => '8.00',
+                '#size' => 2,
+                '#maxlength' => 5,
+                '#number_type' => 'decimal',
+                '#element_validate' => array(
+                  '0' => 'number_field_widget_validate',
+                ),
+              ),
+            ),
+            '#theme' => 'field_multiple_value_form',
+            '#field_name' => 'field_r02',
+            '#cardinality' => '1',
+            '#title' => '',
+            '#required' => 0,
+            '#description' => '',
+            '#prefix' => '<div id="field-r02-add-more-wrapper">',
+            '#suffix' => '</div>',
+            '#max_delta' => 0,
+            '#after_build' => array(
+              '0' => 'field_form_element_after_build',
+            ),
+            '#language' => 'und',
+            '#field_parents' => array(),
+          ),
+          '#access' => TRUE,
       );
-*/
       /* $form['actions']['submit']['#value'] = t('Save Me'); */
     // That's it. Stop checking form ids.
     break;
@@ -88,3 +136,84 @@ function cehs_ts_theme() {
         ),
     );
 }
+
+
+
+/**
+ * Rebuild the totals for each day using AJAX after a field is edited.
+ */
+function cehs_ts_totals($form, &$form_state) {
+  // Since the form builder is called after every AJAX request, we rebuild
+  // the form based on $form_state.
+/*   $num_checkboxes = !empty($form_state['values']['howmany_select']) ? $form_state['values']['howmany_select'] : 1; */
+  
+  $form['field_r01'] = array(
+    '#type' => 'textfield',
+    '#default_value' => 'r01',
+    '#size' => 1
+  );
+
+/*
+  $form['howmany_select'] = array(
+    '#title' => t('How many checkboxes do you want?'),
+    '#type' => 'select',
+    '#options' => array(1 => 1, 2 => 2, 3 => 3, 4 => 4),
+    '#default_value' => $num_checkboxes,
+    '#ajax' => array(
+      'callback' => 'ajax_example_autocheckboxes_callback',
+      'wrapper' => 'checkboxes-div',
+      //'method' defaults to replaceWith, but valid values also include
+      // append, prepend, before and after.
+      // 'method' => 'replaceWith',
+      // 'effect' defaults to none. Other valid values are 'fade' and 'slide'.
+      // See ajax_example_autotextfields for an example of 'fade'.
+      'effect' => 'slide',
+      // 'speed' defaults to 'slow'. You can also use 'fast'
+      // or a number of milliseconds for the animation to last.
+      // 'speed' => 'slow',
+      // Don't show any throbber...
+      'progress' => array('type' => 'none'),
+    ),
+  );
+
+
+  $form['checkboxes_fieldset'] = array(
+    '#title' => t("Generated Checkboxes"),
+    // The prefix/suffix provide the div that we're replacing, named by
+    // #ajax['wrapper'] above.
+    '#prefix' => '<div id="checkboxes-div">',
+    '#suffix' => '</div>',
+    '#type' => 'fieldset',
+    '#description' => t('This is where we get automatically generated checkboxes'),
+  );
+
+  for ($i = 1; $i <= $num_checkboxes; $i++) {
+    $form['checkboxes_fieldset']["checkbox$i"] = array(
+      '#type' => 'checkbox',
+      '#title' => "Checkbox $i",
+    );
+  }
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+*/
+
+  return $form;
+}
+
+/**
+ * Callback element needs only select the portion of the form to be updated.
+ * Since #ajax['callback'] return can be HTML or a renderable array (or an
+ * array of commands), we can just return a piece of the form.
+ * See @link ajax_example_advanced.inc AJAX Advanced Commands for more details
+ * on AJAX framework commands.
+ *
+ * @return renderable array (the checkboxes fieldset)
+ */
+/*
+function cehs_ts_totals_callback($form, $form_state) {
+  return $form['checkboxes_fieldset'];
+}
+*/
