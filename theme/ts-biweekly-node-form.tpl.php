@@ -40,19 +40,19 @@
   $day16 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +15 days");
   $day17 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +16 days");
   $day18 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +17 days");
-  $day19 = $start_date+($day*18);
-  $day20 = $start_date+($day*19);
-  $day21 = $start_date+($day*20);
-  $day22 = $start_date+($day*21);
-  $day23 = $start_date+($day*22);
-  $day24 = $start_date+($day*23);
-  $day25 = $start_date+($day*24);
-  $day26 = $start_date+($day*25);
-  $day27 = $start_date+($day*26);
-  $day28 = $start_date+($day*27);
-  $day29 = $start_date+($day*28);
-  $day30 = $start_date+($day*29);
-  $day31 = $start_date+($day*30);
+  $day19 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +18 days");
+  $day20 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +19 days");
+  $day21 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +20 days");
+  $day22 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +21 days");
+  $day23 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +22 days");
+  $day24 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +23 days");
+  $day25 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +24 days");
+  $day26 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +25 days");
+  $day27 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +26 days");
+  $day28 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +27 days");
+  $day29 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +28 days");
+  $day30 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +29 days");
+  $day31 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +30 days");
 
 ?>
 
