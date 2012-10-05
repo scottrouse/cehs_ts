@@ -4,8 +4,20 @@
  * @todo - add description
  */
 
-/**
- * Implements hook_form_FORM_ID_alter() for the node form.
- *
- * @todo - more specific
- */
+
+
+
+
+
+
+
+
+
+function cehs_ts_autocalc() {
+  
+}
+
+
+function cehs_ts_autocalc_callback($form, $form_state) {
+  return $form['field_t01'];
+}

@@ -278,3 +278,6 @@ function cehs_ts_totals_callback($form, $form_state) {
   return $form['checkboxes_fieldset'];
 }
 */
+
+
+module_load_include('inc', 'cehs_ts', 'cehs_ts_node_form_alter');
