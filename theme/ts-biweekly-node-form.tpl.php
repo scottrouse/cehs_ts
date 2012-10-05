@@ -5,7 +5,7 @@
   
   // Given Pay Period NID, get start date.
   $pay_period_start = $node->field_period_dates['0'];
-  $node = node_load($pay_period_id[0]);
+  $node = node_load($pay_period_id[0]); // @todo - set some error handling if noderef from url isn't used (node/add/foo fails)
   /* $pay_period_start2 = field_view_value('node', $node, 'field_period_dates', $field[0]); */
   $pay_period_start3 = field_get_items('node', $node, 'field_period_dates');
   $start_date = strtotime($pay_period_start3['0']['value']);
@@ -75,7 +75,7 @@
 
 
 
-<?php print drupal_render($form['title']); ?></p>
+<p><?php print drupal_render($form['title']); ?></p>
 
 <div id="employee-info">
   <p><?php print drupal_render($form['field_employee_name']); ?></p>
