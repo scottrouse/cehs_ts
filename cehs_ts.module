@@ -58,52 +58,51 @@ $r01 = $form['field_r01'] = array(
               '2' => 'field-widget-number'
             ),
           ),
-          '#weight' => '5',
+          '#weight' => '',
           '#tree' => TRUE,
           '#language' => 'und',
           'und' => array(
             '0' => array(
               'value' => array(
                 '#entity_type' => 'node',
-                '#entity' => '',
                 '#bundle' => 'ts_biweekly',
                 '#field_name' => 'field_r02',
                 '#language' => 'und',
                 '#field_parents' => array(),
-                '#columns' => array(0),
-                '#title' => 'r02',
+                '#columns' => array(
+                  '0' => 'value',
+                ),
+                '#title' => '',
                 '#description' => '',
                 '#required' => FALSE,
                 '#delta' => 0,
                 '#weight' => 0,
                 '#type' => 'textfield',
                 '#default_value' => '8.00',
-                '#size' => 14,
-                '#maxlength' => 12,
+                '#size' => 2,
+                '#maxlength' => 5,
                 '#number_type' => 'decimal',
                 '#element_validate' => array(
                   '0' => 'number_field_widget_validate',
                 ),
               ),
             ),
-            '#theme' => '',
+            '#theme' => 'field_multiple_value_form',
             '#field_name' => 'field_r02',
             '#cardinality' => '1',
-            '#title' => 'r02',
+            '#title' => '',
             '#required' => 0,
             '#description' => '',
             '#prefix' => '<div id="field-r02-add-more-wrapper">',
             '#suffix' => '</div>',
             '#max_delta' => 0,
             '#after_build' => array(
-              
+              '0' => 'field_form_element_after_build',
             ),
             '#language' => 'und',
             '#field_parents' => array(),
           ),
           '#access' => TRUE,
-          '#default_value' => '8.00',
-          '#size' => 4
       );
       /* $form['actions']['submit']['#value'] = t('Save Me'); */
     // That's it. Stop checking form ids.
