@@ -86,14 +86,14 @@ $r01 = $form['field_r01'] = array(
                 ),
               ),
             ),
-            '#theme' =>
+            '#theme' => '',
             '#field_name' => 'field_r02',
             '#cardinality' => '1',
             '#title' => 'r02',
             '#required' => 0,
             '#description' => '',
-            '#prefix' => '<div id="field-r02-add-more-wrapper">'
-            '#suffix' => '</div>'
+            '#prefix' => '<div id="field-r02-add-more-wrapper">',
+            '#suffix' => '</div>',
             '#max_delta' => 0,
             '#after_build' => array(
               
