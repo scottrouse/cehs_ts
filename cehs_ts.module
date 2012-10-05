@@ -49,6 +49,64 @@ $r01 = $form['field_r01'] = array(
                       ))
       );
 */
+
+// ============= BRAD: Start copying below this comment. ================
+      $form['field_r01'] = array(
+          '#type' => 'container',
+          '#attributes' => array(
+            'class' => array(
+              '0' => 'field-type-number-decimal',
+              '1' => 'field-name-field-r01',
+              '2' => 'field-widget-number'
+            ),
+          ),
+          '#weight' => '',
+          '#tree' => TRUE,
+          '#language' => 'und',
+          'und' => array(
+            '0' => array(
+              'value' => array(
+                '#entity_type' => 'node',
+                '#bundle' => 'ts_biweekly',
+                '#field_name' => 'field_r01',
+                '#language' => 'und',
+                '#field_parents' => array(),
+                '#columns' => array(
+                  '0' => 'value',
+                ),
+                '#title' => '',
+                '#description' => '',
+                '#required' => FALSE,
+                '#delta' => 0,
+                '#weight' => 0,
+                '#type' => 'textfield',
+                '#default_value' => '8.00',
+                '#size' => 2,
+                '#maxlength' => 5,
+                '#number_type' => 'decimal',
+                '#element_validate' => array(
+                  '0' => 'number_field_widget_validate',
+                ),
+              ),
+            ),
+            '#theme' => 'field_multiple_value_form',
+            '#field_name' => 'field_r01',
+            '#cardinality' => '1',
+            '#title' => '',
+            '#required' => 0,
+            '#description' => '',
+            '#prefix' => '<div id="field-r01-add-more-wrapper">',
+            '#suffix' => '</div>',
+            '#max_delta' => 0,
+            '#after_build' => array(
+              '0' => 'field_form_element_after_build',
+            ),
+            '#language' => 'und',
+            '#field_parents' => array(),
+          ),
+          '#access' => TRUE,
+      );
+// ============= BRAD: Stop copying above this comment. ================
       $form['field_r02'] = array(
           '#type' => 'container',
           '#attributes' => array(
@@ -104,6 +162,9 @@ $r01 = $form['field_r01'] = array(
           ),
           '#access' => TRUE,
       );
+
+
+
       /* $form['actions']['submit']['#value'] = t('Save Me'); */
     // That's it. Stop checking form ids.
     break;
