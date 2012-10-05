@@ -162,8 +162,6 @@ $r01 = $form['field_r01'] = array(
           ),
           '#access' => TRUE,
       );
-<<<<<<< HEAD
-=======
 $form['field_r03'] = array(
           '#type' => 'container',
           '#attributes' => array(
@@ -219,7 +217,6 @@ $form['field_r03'] = array(
           ),
           '#access' => TRUE,
       );
->>>>>>> 6391d7a804deeff79325a530b528fa1f8a3616d2
 
 
 
