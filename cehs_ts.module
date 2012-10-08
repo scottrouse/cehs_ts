@@ -115,10 +115,12 @@ $r01 = $form['field_r01'] = array(
                 '#element_validate' => array(
                   '0' => 'number_field_widget_validate',
                 ),
-                '#ajax' => array(
+                /*
+'#ajax' => array(
                   'callback' => 'cehs_ts_autocalc_callback',
                   'wrapper' => 'edit-field-t02',
                 ),
+*/
               ),
             ),
             '#theme' => 'field_multiple_value_form',
@@ -3109,7 +3111,11 @@ $form['field_t14'] = array(
           '#access' => TRUE,
       );
 
-      
+/*
+      if (!empty($form_state['values']['field_r02'])) {
+    $form['field_t02']['#default_value'] = 'new';
+  }
+*/
 
 
       /* $form['actions']['submit']['#value'] = t('Save Me'); */
@@ -3147,84 +3153,6 @@ function cehs_ts_theme() {
 
 
 
-/**
- * Rebuild the totals for each day using AJAX after a field is edited.
- */
-function cehs_ts_totals($form, &$form_state) {
-  // Since the form builder is called after every AJAX request, we rebuild
-  // the form based on $form_state.
-/*   $num_checkboxes = !empty($form_state['values']['howmany_select']) ? $form_state['values']['howmany_select'] : 1; */
-  
-  $form['field_r01'] = array(
-    '#type' => 'textfield',
-    '#default_value' => 'r01',
-    '#size' => 1
-  );
-
-/*
-  $form['howmany_select'] = array(
-    '#title' => t('How many checkboxes do you want?'),
-    '#type' => 'select',
-    '#options' => array(1 => 1, 2 => 2, 3 => 3, 4 => 4),
-    '#default_value' => $num_checkboxes,
-    '#ajax' => array(
-      'callback' => 'ajax_example_autocheckboxes_callback',
-      'wrapper' => 'checkboxes-div',
-      //'method' defaults to replaceWith, but valid values also include
-      // append, prepend, before and after.
-      // 'method' => 'replaceWith',
-      // 'effect' defaults to none. Other valid values are 'fade' and 'slide'.
-      // See ajax_example_autotextfields for an example of 'fade'.
-      'effect' => 'slide',
-      // 'speed' defaults to 'slow'. You can also use 'fast'
-      // or a number of milliseconds for the animation to last.
-      // 'speed' => 'slow',
-      // Don't show any throbber...
-      'progress' => array('type' => 'none'),
-    ),
-  );
-
-
-  $form['checkboxes_fieldset'] = array(
-    '#title' => t("Generated Checkboxes"),
-    // The prefix/suffix provide the div that we're replacing, named by
-    // #ajax['wrapper'] above.
-    '#prefix' => '<div id="checkboxes-div">',
-    '#suffix' => '</div>',
-    '#type' => 'fieldset',
-    '#description' => t('This is where we get automatically generated checkboxes'),
-  );
-
-  for ($i = 1; $i <= $num_checkboxes; $i++) {
-    $form['checkboxes_fieldset']["checkbox$i"] = array(
-      '#type' => 'checkbox',
-      '#title' => "Checkbox $i",
-    );
-  }
-
-  $form['submit'] = array(
-    '#type' => 'submit',
-    '#value' => t('Submit'),
-  );
-*/
-
-  return $form;
-}
-
-/**
- * Callback element needs only select the portion of the form to be updated.
- * Since #ajax['callback'] return can be HTML or a renderable array (or an
- * array of commands), we can just return a piece of the form.
- * See @link ajax_example_advanced.inc AJAX Advanced Commands for more details
- * on AJAX framework commands.
- *
- * @return renderable array (the checkboxes fieldset)
- */
-/*
-function cehs_ts_totals_callback($form, $form_state) {
-  return $form['checkboxes_fieldset'];
-}
-*/
 
 
 
@@ -3232,4 +3160,7 @@ function cehs_ts_totals_callback($form, $form_state) {
 
 
 
-module_load_include('inc', 'cehs_ts', 'cehs_ts_node_form_alter');
+
+
+
+/* module_load_include('inc', 'cehs_ts', 'cehs_ts_node_form_alter'); */
