@@ -75,5 +75,5 @@ function cehs_ts_autocalc_callback($form, $form_state) {
           '#access' => TRUE,
       );
   
-  return $form['field_t02'];
+  return $form;
 }
