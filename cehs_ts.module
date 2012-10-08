@@ -136,12 +136,15 @@ $r01 = $form['field_r01'] = array(
                 '#delta' => 0,
                 '#weight' => 0,
                 '#type' => 'textfield',
-                '#default_value' => '8.00',
+                '#default_value' => '8.01',
                 '#size' => 2,
                 '#maxlength' => 5,
                 '#number_type' => 'decimal',
                 '#element_validate' => array(
                   '0' => 'number_field_widget_validate',
+                ),
+                '#ajax' => array(
+                  'callback' => 'cehs_ts_autocalc_callback',
                 ),
               ),
             ),
