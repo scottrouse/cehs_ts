@@ -84,6 +84,9 @@
 
 <?php print drupal_render($form['field_pay_period_ref']); ?>
 
+<div id="errorMessages">
+  <h2>Please correct the following errors before submitting:</h2>
+</div>
 
 
 <table summary="A spreadsheet-like form containing hours by category per day for this seven day period.">
