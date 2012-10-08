@@ -24,33 +24,6 @@ $r01 = $form['field_r01'] = array(
   // switch will let us use different alters for each of the three timesheet forms
   switch ($form_id) {
     case 'ts_biweekly_node_form':
-     /*
- $form['field_employee_id'] = array(
-        '#type' => 'textarea',
-        '#language' => 'und',
-        '#access' => FALSE,
-        '#value' => $employee_id
-      );
-*/
-/*
-      $form['week1'] = array(
-        '#markup' => t("<table class='myclass'>
-                        <tr>
-                          <th>Sunday</th>
-                          <th>Monday</th>
-                        </tr>
-                        <tr>
-                          <td>@r01</td>
-                          <td>@r02</td>
-                        </tr>
-                      </table>", array(
-                        '@r01' => 'foo',
-                        '@r02' => 'r02',
-                      ))
-      );
-*/
-
-// ============= BRAD: Start copying below this comment. ================
       $form['field_r01'] = array(
           '#type' => 'container',
           '#attributes' => array(
@@ -106,7 +79,6 @@ $r01 = $form['field_r01'] = array(
           ),
           '#access' => TRUE,
       );
-// ============= BRAD: Stop copying above this comment. ================
       $form['field_r02'] = array(
           '#type' => 'container',
           '#attributes' => array(
@@ -145,6 +117,7 @@ $r01 = $form['field_r01'] = array(
                 ),
                 '#ajax' => array(
                   'callback' => 'cehs_ts_autocalc_callback',
+                  'wrapper' => 'edit-field-t02',
                 ),
               ),
             ),
@@ -3136,7 +3109,7 @@ $form['field_t14'] = array(
           '#access' => TRUE,
       );
 
-
+      
 
 
       /* $form['actions']['submit']['#value'] = t('Save Me'); */
@@ -3252,6 +3225,11 @@ function cehs_ts_totals_callback($form, $form_state) {
   return $form['checkboxes_fieldset'];
 }
 */
+
+
+
+
+
 
 
 module_load_include('inc', 'cehs_ts', 'cehs_ts_node_form_alter');
