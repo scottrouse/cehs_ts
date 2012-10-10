@@ -43,6 +43,7 @@ jQuery(document).ready(function($){
     $('#edit-field-t07-und-0-value').val(r+a+s);
   });
   
+  var $regular = $('#regular1').text();
   var $day01 = $('#day01').text();
   
   $('#ts-biweekly-node-form').validate({
@@ -67,7 +68,7 @@ jQuery(document).ready(function($){
       }
     },
     messages: {
-      "field_r01[und][0][value]": "You may only record between 0 and 8 hours on "+ $day01 +".",
+      "field_r01[und][0][value]": "You may only record between 0 and 8 "+ $regular +" on "+ $day01 +".",
     }
   });
   
