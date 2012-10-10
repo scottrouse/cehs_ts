@@ -84,7 +84,7 @@
 
 <?php print drupal_render($form['field_pay_period_ref']); ?>
 
-<div id="errorMessages">
+<div id="errorMessages" style="display: none;">
   <h2>Please correct the following errors before submitting:</h2>
 </div>
 
