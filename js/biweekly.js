@@ -85,6 +85,8 @@ jQuery(document).ready(function($){
         number: true,
         range: [0,8]
       },
+      /* @todo - BRAD - Copy the four rules above (from "field_r02[und]... to the closing brace and comma above this line).
+      Paste them above this comment and change the "02" to "03" in all four. Repeat through field 31. */
     },
     messages: {
       "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on <em>"+ $day01 +"</em>.",
