@@ -87,14 +87,14 @@ jQuery(document).ready(function($){
       },
     },
     messages: {
-      "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on "+ $day01 +".",
-      "field_a01[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on "+ $day01 +".",
-      "field_s01[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on "+ $day01 +".",
-      "field_t01[und][0][value]": "Your Total Hours may not exceed {1} on "+ $day01 +".",
-      "field_r02[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on "+ $day02 +".",
-      "field_a02[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on "+ $day02 +".",
-      "field_s02[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on "+ $day02 +".",
-      "field_t02[und][0][value]": "Your Total Hours may not exceed {1} on "+ $day02 +".",
+      "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on <em>"+ $day01 +"</em>.",
+      "field_a01[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on <em>"+ $day01 +"</em>.",
+      "field_s01[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on <em>"+ $day01 +"</em>.",
+      "field_t01[und][0][value]": "Your Total Hours may not exceed {1} on <em>"+ $day01 +"</em>.",
+      "field_r02[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on <em>"+ $day02 +"</em>.",
+      "field_a02[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on <em>"+ $day02 +"</em>.",
+      "field_s02[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on <em>"+ $day02 +"</em>.",
+      "field_t02[und][0][value]": "Your Total Hours may not exceed {1} on <em>"+ $day02 +"</em>.",
       /* @todo - BRAD - copy the four lines above this comment (starting with "field_r02...). Paste them here
       (above this comment is fine) and change the field name (field_r02, field_a02, field_s02, etc) to field_r03, field_a03, etc
       and change the $day02 variable to $day03. Repeat through all 31 fields. */
