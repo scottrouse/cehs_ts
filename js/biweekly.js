@@ -68,7 +68,23 @@ jQuery(document).ready(function($){
       "field_t01[und][0][value]": {
         number: true,
         range: [0,8]
-      }
+      },
+      "field_r02[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a02[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s02[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t02[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
     },
     messages: {
       "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on "+ $day01 +".",
