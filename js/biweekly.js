@@ -43,10 +43,6 @@ jQuery(document).ready(function($){
     $('#edit-field-t07-und-0-value').val(r+a+s);
   });
   
-  var $regular1 = $('#regular1').text();
-  var $annual1 = $('#annual1').text();
-  var $sick1 = $('#sick1').text();
-  var $total1 = $('#total1').text();
   var $day01 = $('#day01').text();
   var $day02 = $('#day02').text();
   
@@ -72,10 +68,10 @@ jQuery(document).ready(function($){
       }
     },
     messages: {
-      "field_r01[und][0][value]": "You may only record between {0} and {1} "+ $regular1 +" on "+ $day01 +".",
-      "field_a01[und][0][value]": "You may only record between {0} and {1} "+ $annual1 +" on "+ $day01 +".",
-      "field_s01[und][0][value]": "You may only record between {0} and {1} "+ $sick1 +" on "+ $day01 +".",
-      "field_t01[und][0][value]": "You may only record between {0} and {1} "+ $total1 +" on "+ $day01 +".",
+      "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on "+ $day01 +".",
+      "field_a01[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on "+ $day01 +".",
+      "field_s01[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on "+ $day01 +".",
+      "field_t01[und][0][value]": "Your Total Hours may not exceed {1} on "+ $day01 +".",
     }
   });
   
