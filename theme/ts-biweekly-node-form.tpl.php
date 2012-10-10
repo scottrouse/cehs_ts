@@ -89,23 +89,23 @@
 </div>
 
 
-<table summary="A spreadsheet-like form containing hours by category per day for this seven day period.">
+<table summary="A spreadsheet-like form containing hours by category per day for this seven day period." id="week1">
   <caption>Week One</caption>
   <thead>
     <tr>
       <td></td>
-      <th abbr="<?php print date($format_day, $day1)?>, <?php print date($format_medium, $day1)?>"><?php print date($format_day, $day1)?><br /><?php print date($format_long, $day1)?></th>
-      <th abbr="<?php print date($format_day, $day2)?>, <?php print date($format_medium, $day2)?>"><?php print date($format_day, $day2)?><br /><?php print date($format_long, $day2)?></th>
-      <th abbr="<?php print date($format_day, $day3)?>, <?php print date($format_medium, $day3)?>"><?php print date($format_day, $day3)?><br /><?php print date($format_long, $day3)?></th>
-      <th abbr="<?php print date($format_day, $day4)?>, <?php print date($format_medium, $day4)?>"><?php print date($format_day, $day4)?><br /><?php print date($format_long, $day4)?></th>
-      <th abbr="<?php print date($format_day, $day5)?>, <?php print date($format_medium, $day5)?>"><?php print date($format_day, $day5)?><br /><?php print date($format_long, $day5)?></th>
-      <th abbr="<?php print date($format_day, $day6)?>, <?php print date($format_medium, $day6)?>"><?php print date($format_day, $day6)?><br /><?php print date($format_long, $day6)?></th>
-      <th abbr="<?php print date($format_day, $day7)?>, <?php print date($format_medium, $day7)?>"><?php print date($format_day, $day7)?><br /><?php print date($format_long, $day7)?></th>
+      <th abbr="<?php print date($format_day, $day1)?>, <?php print date($format_medium, $day1)?>" id="day01"><?php print date($format_day, $day1)?><br /><?php print date($format_long, $day1)?></th>
+      <th abbr="<?php print date($format_day, $day2)?>, <?php print date($format_medium, $day2)?>" id="day02"><?php print date($format_day, $day2)?><br /><?php print date($format_long, $day2)?></th>
+      <th abbr="<?php print date($format_day, $day3)?>, <?php print date($format_medium, $day3)?>" id="day03"><?php print date($format_day, $day3)?><br /><?php print date($format_long, $day3)?></th>
+      <th abbr="<?php print date($format_day, $day4)?>, <?php print date($format_medium, $day4)?>" id="day04"><?php print date($format_day, $day4)?><br /><?php print date($format_long, $day4)?></th>
+      <th abbr="<?php print date($format_day, $day5)?>, <?php print date($format_medium, $day5)?>" id="day05"><?php print date($format_day, $day5)?><br /><?php print date($format_long, $day5)?></th>
+      <th abbr="<?php print date($format_day, $day6)?>, <?php print date($format_medium, $day6)?>" id="day06"><?php print date($format_day, $day6)?><br /><?php print date($format_long, $day6)?></th>
+      <th abbr="<?php print date($format_day, $day7)?>, <?php print date($format_medium, $day7)?>" id="day07"><?php print date($format_day, $day7)?><br /><?php print date($format_long, $day7)?></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th abbr="regular">Regular Hours</th>
+      <th abbr="regular" id="regular1">Regular Hours</th>
       <td><?php print drupal_render($form['field_r01']); ?></td>
       <td><?php print drupal_render($form['field_r02']); ?></td>
       <td><?php print drupal_render($form['field_r03']); ?></td>
@@ -115,7 +115,7 @@
       <td><?php print drupal_render($form['field_r07']); ?></td>
     </tr>
     <tr>
-      <th abbr="annual">Annual Leave</th>
+      <th abbr="annual" id="annual1">Annual Leave</th>
       <td><?php print drupal_render($form['field_a01']); ?></td>
       <td><?php print drupal_render($form['field_a02']); ?></td>
       <td><?php print drupal_render($form['field_a03']); ?></td>
@@ -125,7 +125,7 @@
       <td><?php print drupal_render($form['field_a07']); ?></td>
     </tr>
     <tr>
-      <th abbr="sick">Sick Leave</th>
+      <th abbr="sick" id="sick1">Sick Leave</th>
       <td><?php print drupal_render($form['field_s01']); ?></td>
       <td><?php print drupal_render($form['field_s02']); ?></td>
       <td><?php print drupal_render($form['field_s03']); ?></td>
@@ -137,7 +137,7 @@
   <tbody>
   <tfoot>
     <tr>
-      <th>Total</th>
+      <th id="total1">Total</th>
       <td><?php print drupal_render($form['field_t01']); ?></td>
       <td><?php print drupal_render($form['field_t02']); ?></td>
       <td><?php print drupal_render($form['field_t03']); ?></td>
@@ -149,23 +149,23 @@
   </tfoot>
 </table>
 
-<table summary="A spreadsheet-like form containing hours by category per day for this seven day period.">
+<table summary="A spreadsheet-like form containing hours by category per day for this seven day period." id="week2">
   <caption>Week Two</caption>
   <thead>
     <tr>
       <td></td>
-      <th abbr="<?php print date($format_day, $day8)?>, <?php print date($format_medium, $day8)?>"><?php print date($format_day, $day8)?><br /><?php print date($format_long, $day8) ?></th>
-      <th abbr="<?php print date($format_day, $day9)?>, <?php print date($format_medium, $day9)?>"><?php print date($format_day, $day9)?><br /><?php print date($format_long, $day9) ?></th>
-      <th abbr="<?php print date($format_day, $day10)?>, <?php print date($format_medium, $day10)?>"><?php print date($format_day, $day10)?><br /><?php print date($format_long, $day10) ?></th>
-      <th abbr="<?php print date($format_day, $day11)?>, <?php print date($format_medium, $day11)?>"><?php print date($format_day, $day11)?><br /><?php print date($format_long, $day11) ?></th>
-      <th abbr="<?php print date($format_day, $day12)?>, <?php print date($format_medium, $day12)?>"><?php print date($format_day, $day12)?><br /><?php print date($format_long, $day12) ?></th>
-      <th abbr="<?php print date($format_day, $day13)?>, <?php print date($format_medium, $day13)?>"><?php print date($format_day, $day13)?><br /><?php print date($format_long, $day13) ?></th>
-      <th abbr="<?php print date($format_day, $day14)?>, <?php print date($format_medium, $day14)?>"><?php print date($format_day, $day14)?><br /><?php print date($format_long, $day14) ?></th>
+      <th abbr="<?php print date($format_day, $day8)?>, <?php print date($format_medium, $day8)?>" id="day08"><?php print date($format_day, $day8)?><br /><?php print date($format_long, $day8) ?></th>
+      <th abbr="<?php print date($format_day, $day9)?>, <?php print date($format_medium, $day9)?>" id="day09"><?php print date($format_day, $day9)?><br /><?php print date($format_long, $day9) ?></th>
+      <th abbr="<?php print date($format_day, $day10)?>, <?php print date($format_medium, $day10)?>" id="day10"><?php print date($format_day, $day10)?><br /><?php print date($format_long, $day10) ?></th>
+      <th abbr="<?php print date($format_day, $day11)?>, <?php print date($format_medium, $day11)?>" id="day11"><?php print date($format_day, $day11)?><br /><?php print date($format_long, $day11) ?></th>
+      <th abbr="<?php print date($format_day, $day12)?>, <?php print date($format_medium, $day12)?>" id="day12"><?php print date($format_day, $day12)?><br /><?php print date($format_long, $day12) ?></th>
+      <th abbr="<?php print date($format_day, $day13)?>, <?php print date($format_medium, $day13)?>" id="day13"><?php print date($format_day, $day13)?><br /><?php print date($format_long, $day13) ?></th>
+      <th abbr="<?php print date($format_day, $day14)?>, <?php print date($format_medium, $day14)?>" id="day14"><?php print date($format_day, $day14)?><br /><?php print date($format_long, $day14) ?></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th abbr="regular">Regular Hours</th>
+      <th abbr="regular" id="regular2">Regular Hours</th>
       <td><?php print drupal_render($form['field_r08']); ?></td>
       <td><?php print drupal_render($form['field_r09']); ?></td>
       <td><?php print drupal_render($form['field_r10']); ?></td>
@@ -175,7 +175,7 @@
       <td><?php print drupal_render($form['field_r14']); ?></td>
     </tr>
     <tr>
-      <th abbr="annual">Annual Leave</th>
+      <th abbr="annual" id="annual2">Annual Leave</th>
       <td><?php print drupal_render($form['field_a08']); ?></td>
       <td><?php print drupal_render($form['field_a09']); ?></td>
       <td><?php print drupal_render($form['field_a10']); ?></td>
@@ -185,7 +185,7 @@
       <td><?php print drupal_render($form['field_a14']); ?></td>
     </tr>
     <tr>
-      <th abbr="sick">Sick Leave</th>
+      <th abbr="sick" id="sick2">Sick Leave</th>
       <td><?php print drupal_render($form['field_s08']); ?></td>
       <td><?php print drupal_render($form['field_s09']); ?></td>
       <td><?php print drupal_render($form['field_s10']); ?></td>
@@ -197,7 +197,7 @@
   <tbody>
   <tfoot>
     <tr>
-      <th>Total</th>
+      <th id="total2">Total</th>
       <td><?php print drupal_render($form['field_t08']); ?></td>
       <td><?php print drupal_render($form['field_t09']); ?></td>
       <td><?php print drupal_render($form['field_t10']); ?></td>
