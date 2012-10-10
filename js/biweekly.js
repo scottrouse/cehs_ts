@@ -43,7 +43,7 @@ jQuery(document).ready(function($){
     $('#edit-field-t07-und-0-value').val(r+a+s);
   });
   
-  var $day01 = $('#day01').html();
+  var $day01 = $('#day01').text();
   
   $('#ts-biweekly-node-form').validate({
     errorLabelContainer: '#errorMessages',
