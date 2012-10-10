@@ -72,6 +72,10 @@ jQuery(document).ready(function($){
       "field_a01[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on "+ $day01 +".",
       "field_s01[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on "+ $day01 +".",
       "field_t01[und][0][value]": "Your Total Hours may not exceed {1} on "+ $day01 +".",
+      "field_r02[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on "+ $day02 +".",
+      "field_a02[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on "+ $day02 +".",
+      "field_s02[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on "+ $day02 +".",
+      "field_t02[und][0][value]": "Your Total Hours may not exceed {1} on "+ $day02 +".",
     }
   });
   
