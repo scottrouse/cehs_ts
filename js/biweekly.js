@@ -191,6 +191,36 @@ jQuery(document).ready(function($){
   
   var $day01 = $('#day01').text();
   var $day02 = $('#day02').text();
+  var $day03 = $('#day03').text();
+  var $day04 = $('#day04').text();
+  var $day05 = $('#day05').text();
+  var $day06 = $('#day06').text();
+  var $day07 = $('#day07').text();
+  var $day08 = $('#day08').text();
+  var $day09 = $('#day09').text();
+  var $day10 = $('#day10').text();
+  var $day11 = $('#day11').text();
+  var $day12 = $('#day12').text();
+  var $day13 = $('#day13').text();
+  var $day14 = $('#day14').text();
+  var $day15 = $('#day15').text();
+  var $day16 = $('#day16').text();
+  var $day17 = $('#day17').text();
+  var $day18 = $('#day18').text();
+  var $day19 = $('#day19').text();
+  var $day20 = $('#day20').text();
+  var $day21 = $('#day21').text();
+  var $day22 = $('#day22').text();
+  var $day23 = $('#day23').text();
+  var $day24 = $('#day24').text();
+  var $day25 = $('#day25').text();
+  var $day26 = $('#day26').text();
+  var $day27 = $('#day27').text();
+  var $day28 = $('#day28').text();
+  var $day29 = $('#day29').text();
+  var $day30 = $('#day30').text();
+  var $day31 = $('#day31').text();
+
   /* @todo - BRAD - copy the variable above and paste to make through $day31. */
   
   $('#ts-biweekly-node-form').validate({
