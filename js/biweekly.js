@@ -259,6 +259,471 @@ jQuery(document).ready(function($){
         number: true,
         range: [0,8]
       },
+      "field_r03[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a03[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s03[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t03[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r04[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a04[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s04[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t04[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r05[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a05[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s05[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t05[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r06[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a06[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s06[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t06[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r07[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a07[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s07[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t07[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r08[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a08[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s08[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t08[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r09[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a09[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s09[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t09[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r10[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a10[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s10[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t10[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r11[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a11[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s11[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t11[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r12[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a12[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s12[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t12[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r13[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a13[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s13[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t13[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r14[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a14[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s14[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t14[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r15[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a15[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s15[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t15[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r16[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a16[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s16[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t16[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r17[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a17[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s17[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t17[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r18[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a18[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s18[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t18[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r19[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a19[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s19[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t19[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r20[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a20[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s20[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t20[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r21[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a21[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s21[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t21[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r22[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a22[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s22[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t22[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r23[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a23[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s23[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t23[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r24[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a24[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s24[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t24[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r25[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a25[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s25[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t25[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r26[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a26[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s26[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t26[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r27[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a27[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s27[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t27[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r28[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a28[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s28[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t28[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r29[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a29[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s29[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t29[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r30[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a30[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s30[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t30[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_r31[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_a31[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_s31[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+      "field_t31[und][0][value]": {
+        number: true,
+        range: [0,8]
+      },
+
       /* @todo - BRAD - Copy the four rules above (from "field_r02[und]... to the closing brace and comma above this line).
       Paste them above this comment and change the "02" to "03" in all four. Repeat through field 31. */
     },
