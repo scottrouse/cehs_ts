@@ -70,6 +70,9 @@
 <p>Date unix2: <?php echo(strtotime($start_date))?></p>
 
 <p>$start_date_raw: <?php echo($start_date_raw)?></p>
+<p>Author: @todo - author uid</p>
+<p>Empl Name: @todo - empl name</p>
+<p>Empl id: @todo - empl id</p>
 
 </div>
 
