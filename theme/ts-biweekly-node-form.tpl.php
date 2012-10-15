@@ -78,7 +78,7 @@
 
 
 
-<p><?php print drupal_render($form['title']); ?></p>
+<!-- <p><?php print drupal_render($form['title']); ?></p> -->
 
 <div id="employee-info">
   <p><?php print drupal_render($form['field_employee_name']); ?></p>
