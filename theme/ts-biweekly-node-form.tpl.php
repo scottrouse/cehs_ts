@@ -58,7 +58,7 @@
 
 
 <!-- @todo - remove before publishing -->
-<div style="border:2px dashed red; padding: 10px; margin: 10px; background-color: #ccc;">
+<div style="border:2px dashed red; padding: 10px; margin: 10px; background-color: #ccc; display:none;">
 
 <p>This is the "ts-bi-weekly-node-form.tpl.php" template file output.</p>
 
