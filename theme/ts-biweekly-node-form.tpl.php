@@ -55,7 +55,23 @@
   $day31 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +30 days");
   
   global $user;
-  $uid = user_load($user->uid);
+  $uid = $user->uid;
+  $account = user_load($uid);
+  
+  $author = $node->uid;
+  
+  $profile = profile2_load_by_user($account);
+  
+  $fname_field = field_get_items('profile2', $profile['01_main'], 'field_user_first_name');
+  $lname_field = field_get_items('profile2', $profile['01_main'], 'field_user_last_name');
+  
+  $first_name = $fname_field[0]['value'];
+  $last_name = $lname_field[0]['value'];
+  $full_name = $first_name . ' ' . $last_name;
+  
+  $first_array = drupal_render(field_view_value('profile2', $profile['01_main'], 'field_user_first_name', $item, $display = 'default'));
+  
+  $first_array = render($first_name);
 
 ?>
 
@@ -74,9 +90,16 @@
 
 <p>$start_date_raw: <?php echo($start_date_raw)?></p>
 <p>User ID: <?php echo($uid)?></p>
-<p>Author: @todo - author uid</p>
-<p>Empl Name: @todo - empl name</p>
+<p>Author: <?php echo($author)?></p>
+<p>Empl Name: <?php echo($full_name)?></p>
 <p>Empl id: @todo - empl id</p>
+
+<p>Profile:<br><pre><?php print_r ($profile); ?></pre></p>
+
+<p>User Object:<br><pre><?php print_r($account); ?></pre></p>
+
+<p>Field Object:<br><pre><?php print_r($first_array); ?></pre></p>
+
 
 </div>
 
