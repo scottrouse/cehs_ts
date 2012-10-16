@@ -18,8 +18,6 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   $uid = $user->uid;
   $account = user_load($uid);
   
-  $author = $node->uid;
-  
   $profile = profile2_load_by_user($account);
   
   $fname_field = field_get_items('profile2', $profile['01_main'], 'field_user_first_name');
