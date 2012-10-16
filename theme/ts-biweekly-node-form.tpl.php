@@ -53,6 +53,9 @@
   $day29 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +28 days");
   $day30 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +29 days");
   $day31 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +30 days");
+  
+  global $user;
+  $uid = user_load($user->uid);
 
 ?>
 
@@ -70,6 +73,7 @@
 <p>Date unix2: <?php echo(strtotime($start_date))?></p>
 
 <p>$start_date_raw: <?php echo($start_date_raw)?></p>
+<p>User ID: <?php echo($uid)?></p>
 <p>Author: @todo - author uid</p>
 <p>Empl Name: @todo - empl name</p>
 <p>Empl id: @todo - empl id</p>
