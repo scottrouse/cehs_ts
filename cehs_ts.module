@@ -20,12 +20,15 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   
   $profile = profile2_load_by_user($account);
   
-  $fname_field = field_get_items('profile2', $profile['01_main'], 'field_user_first_name');
-  $lname_field = field_get_items('profile2', $profile['01_main'], 'field_user_last_name');
-  
-  $first_name = $fname_field[0]['value'];
-  $last_name = $lname_field[0]['value'];
-  $full_name = $first_name . ' ' . $last_name;
+  $full_name = ''; // Set variable to NULL initially.
+  if (profile2_load_by_user($account, '01_main')) { // Check if main profile exists
+    $fname_field = field_get_items('profile2', $profile['01_main'], 'field_user_first_name');
+    $lname_field = field_get_items('profile2', $profile['01_main'], 'field_user_last_name');
+    
+    $first_name = $fname_field[0]['value'];
+    $last_name = $lname_field[0]['value'];
+    $full_name = $first_name . ' ' . $last_name;
+  };
   
   $employee_id = '';
   if (profile2_load_by_user($account, 'payroll_profile')) {
