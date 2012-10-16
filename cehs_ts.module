@@ -14,6 +14,20 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   $employee_id = 'empl id'; // field_get_items('user', $user, 'my_special_field');
   $employee_name = '@todo - set employee name';
   $supervisor = '@todo - get supervisor';
+  global $user;
+  $uid = $user->uid;
+  $account = user_load($uid);
+  
+  $author = $node->uid;
+  
+  $profile = profile2_load_by_user($account);
+  
+  $fname_field = field_get_items('profile2', $profile['01_main'], 'field_user_first_name');
+  $lname_field = field_get_items('profile2', $profile['01_main'], 'field_user_last_name');
+  
+  $first_name = $fname_field[0]['value'];
+  $last_name = $lname_field[0]['value'];
+  $full_name = $first_name . ' ' . $last_name;
   /*
 $r01 = $form['field_r01'] = array(
                           '#type' => 'textfield',
