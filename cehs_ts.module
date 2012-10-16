@@ -30,8 +30,8 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
     $full_name = $first_name . ' ' . $last_name;
   };
   
-  $employee_id = '';
-  if (profile2_load_by_user($account, 'payroll_profile')) {
+  $employee_id = ''; // Set variable to NULL initially.
+  if (profile2_load_by_user($account, 'payroll_profile')) { // Check if payroll profile exists
     $employee_id_raw = field_get_items('profile2', $profile['payroll_profile'], 'field_um_id');
     $employee_id = $employee_id_raw[0]['value'];
   };
