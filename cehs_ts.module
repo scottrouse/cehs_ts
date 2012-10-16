@@ -11,9 +11,6 @@
  * Alters the display of the node/add form for the Timesheets
  */
 function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
-  $employee_id = 'empl id'; // field_get_items('user', $user, 'my_special_field');
-  $employee_name = '@todo - set employee name';
-  $supervisor = '@todo - get supervisor';
   global $user;
   $uid = $user->uid;
   $account = user_load($uid);
