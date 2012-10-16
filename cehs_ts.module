@@ -28,7 +28,7 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   $full_name = $first_name . ' ' . $last_name;
   
   $employee_id = '';
-  if (1 == 2) {
+  if (profile2_load_by_user($uid, 'payroll_profile')) {
     $employee_id_raw = field_get_items('profile2', $profile['payroll_profile'], 'field_um_id');
     $employee_id = $employee_id_raw[0]['value'];
   };
