@@ -32,7 +32,7 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   // switch will let us use different alters for each of the three timesheet forms
   switch ($form_id) {
     case 'ts_biweekly_node_form':
-      $form['field_employee_name']['und']['0']['value']['#default_value'] = 'foo';
+      $form['field_employee_name']['und']['0']['value']['#default_value'] = $full_name;
       $form['field_r01'] = array(
           '#type' => 'container',
           '#attributes' => array(
