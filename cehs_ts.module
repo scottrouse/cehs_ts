@@ -124,12 +124,6 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
                 '#element_validate' => array(
                   '0' => 'number_field_widget_validate',
                 ),
-                /*
-'#ajax' => array(
-                  'callback' => 'cehs_ts_autocalc_callback',
-                  'wrapper' => 'edit-field-t02',
-                ),
-*/
               ),
             ),
             '#theme' => 'field_multiple_value_form',
