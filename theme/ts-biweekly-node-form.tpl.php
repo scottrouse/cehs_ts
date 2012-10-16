@@ -68,10 +68,6 @@
   $first_name = $fname_field[0]['value'];
   $last_name = $lname_field[0]['value'];
   $full_name = $first_name . ' ' . $last_name;
-  
-  $first_array = drupal_render(field_view_value('profile2', $profile['01_main'], 'field_user_first_name', $item, $display = 'default'));
-  
-  $first_array = render($first_name);
 
 ?>
 
