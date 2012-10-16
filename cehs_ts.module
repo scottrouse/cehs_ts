@@ -27,8 +27,11 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   $last_name = $lname_field[0]['value'];
   $full_name = $first_name . ' ' . $last_name;
   
-  $employee_id_raw = field_get_items('profile2', $profile['payroll_profile'], 'field_um_id');
-  $employee_id = $employee_id_raw[0]['value'];
+  $employee_id = '';
+  if (1 == 2) {
+    $employee_id_raw = field_get_items('profile2', $profile['payroll_profile'], 'field_um_id');
+    $employee_id = $employee_id_raw[0]['value'];
+  };
   
   // switch will let us use different alters for each of the three timesheet forms
   switch ($form_id) {
