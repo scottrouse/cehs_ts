@@ -92,13 +92,13 @@
 <p>User ID: <?php echo($uid)?></p>
 <p>Author: <?php echo($author)?></p>
 <p>Empl Name: <?php echo($full_name)?></p>
-<p>Empl id: @todo - empl id</p>
+<!-- <p>Empl id: @todo - empl id</p> -->
 
-<p>Profile:<br><pre><?php print_r ($profile); ?></pre></p>
+<!-- <p>Profile:<br><pre><?php print_r ($profile); ?></pre></p> -->
 
-<p>User Object:<br><pre><?php print_r($account); ?></pre></p>
+<!-- <p>User Object:<br><pre><?php print_r($account); ?></pre></p> -->
 
-<p>Field Object:<br><pre><?php print_r($first_array); ?></pre></p>
+<!-- <p>Field Object:<br><pre><?php print_r($first_array); ?></pre></p> -->
 
 
 </div>
