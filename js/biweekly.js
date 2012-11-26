@@ -761,7 +761,10 @@ jQuery(document).ready(function($){
         number: true,
         range: [0,100]
       },
-
+      "field_ts_grant_total[und][0][value]": {
+        number: true,
+        range: [100,100]
+      },
     },
     messages: {
       "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on <em>"+ $day01 +"</em>.",
@@ -898,7 +901,7 @@ jQuery(document).ready(function($){
       "field_ts_grant[und][7][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
       "field_ts_grant[und][8][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
       "field_ts_grant[und][9][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-
+      "field_ts_grant_total[und][0][value]": "The total grant percentage must equal {1}.",
     }
   });
   
