@@ -186,8 +186,6 @@ jQuery(document).ready(function($){
     var s = Number($('#edit-field-s31-und-0-value').val());
     $('#edit-field-t31-und-0-value').val(r+a+s);
   });
-  /* @todo - BRAD - Copy the 6 lines above (from $('#edit-field... to the }); right above this comment). Paste and change the
-  relevant parts through field 31. */
   
   var $day01 = $('#day01').text();
   var $day02 = $('#day02').text();
@@ -764,8 +762,6 @@ jQuery(document).ready(function($){
         range: [0,100]
       },
 
-      /* @todo - BRAD - Copy the four rules above (from "field_r02[und]... to the closing brace and comma above this line).
-      Paste them above this comment and change the "02" to "03" in all four. Repeat through field 31. */
     },
     messages: {
       "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on <em>"+ $day01 +"</em>.",
@@ -893,10 +889,6 @@ jQuery(document).ready(function($){
       "field_s31[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on <em>"+ $day31 +"</em>.",
       "field_t31[und][0][value]": "Your Total Hours may not exceed {1} on <em>"+ $day31 +"</em>.",
 
-
-      /* @todo - BRAD - copy the four lines above this comment (starting with "field_r02...). Paste them here
-      (above this comment is fine) and change the field name (field_r02, field_a02, field_s02, etc) to field_r03, field_a03, etc
-      and change the $day02 variable to $day03. Repeat through all 31 fields. */
     }
   });
   
