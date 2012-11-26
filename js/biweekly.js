@@ -218,8 +218,6 @@ jQuery(document).ready(function($){
   var $day29 = $('#day29').text();
   var $day30 = $('#day30').text();
   var $day31 = $('#day31').text();
-
-  /* @todo - BRAD - copy the variable above and paste to make through $day31. */
   
   $('#ts-biweekly-node-form').validate({
     errorLabelContainer: '#errorMessages',
