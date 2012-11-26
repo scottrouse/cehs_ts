@@ -186,8 +186,6 @@ jQuery(document).ready(function($){
     var s = Number($('#edit-field-s31-und-0-value').val());
     $('#edit-field-t31-und-0-value').val(r+a+s);
   });
-  /* @todo - BRAD - Copy the 6 lines above (from $('#edit-field... to the }); right above this comment). Paste and change the
-  relevant parts through field 31. */
   
   var $day01 = $('#day01').text();
   var $day02 = $('#day02').text();
@@ -220,8 +218,6 @@ jQuery(document).ready(function($){
   var $day29 = $('#day29').text();
   var $day30 = $('#day30').text();
   var $day31 = $('#day31').text();
-
-  /* @todo - BRAD - copy the variable above and paste to make through $day31. */
   
   $('#ts-biweekly-node-form').validate({
     errorLabelContainer: '#errorMessages',
@@ -723,9 +719,50 @@ jQuery(document).ready(function($){
         number: true,
         range: [0,8]
       },
-
-      /* @todo - BRAD - Copy the four rules above (from "field_r02[und]... to the closing brace and comma above this line).
-      Paste them above this comment and change the "02" to "03" in all four. Repeat through field 31. */
+      "field_ts_grant[und][0][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][1][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][2][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][3][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][4][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][5][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][6][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][7][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][8][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][9][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant_total[und][0][value]": {
+        number: true,
+        range: [100,100]
+      },
     },
     messages: {
       "field_r01[und][0][value]": "You may only record between {0} and {1} <em>Regular</em> hours on <em>"+ $day01 +"</em>.",
@@ -852,12 +889,32 @@ jQuery(document).ready(function($){
       "field_a31[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on <em>"+ $day31 +"</em>.",
       "field_s31[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on <em>"+ $day31 +"</em>.",
       "field_t31[und][0][value]": "Your Total Hours may not exceed {1} on <em>"+ $day31 +"</em>.",
-
-
-      /* @todo - BRAD - copy the four lines above this comment (starting with "field_r02...). Paste them here
-      (above this comment is fine) and change the field name (field_r02, field_a02, field_s02, etc) to field_r03, field_a03, etc
-      and change the $day02 variable to $day03. Repeat through all 31 fields. */
+      "field_ts_grant[und][0][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][1][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][2][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][3][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][4][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][5][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][6][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][7][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][8][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][9][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant_total[und][0][value]": "The total grant percentage must equal {1}.",
     }
   });
   
+  $('#edit-field-ts-grant-und-0-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-1-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-2-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-3-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-4-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-5-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-6-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-7-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-8-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-9-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-total-und-0-value').change(function() {
+    var a = Number($('#edit-field-ts-grant-und-0-field-ts-grant-percent-und-0-value').val());
+    var b = Number($('#edit-field-ts-grant-und-1-field-ts-grant-percent-und-0-value').val());
+    var c = Number($('#edit-field-ts-grant-und-2-field-ts-grant-percent-und-0-value').val());
+    var d = Number($('#edit-field-ts-grant-und-3-field-ts-grant-percent-und-0-value').val());
+    var e = Number($('#edit-field-ts-grant-und-4-field-ts-grant-percent-und-0-value').val());
+    var f = Number($('#edit-field-ts-grant-und-5-field-ts-grant-percent-und-0-value').val());
+    var g = Number($('#edit-field-ts-grant-und-6-field-ts-grant-percent-und-0-value').val());
+    var h = Number($('#edit-field-ts-grant-und-7-field-ts-grant-percent-und-0-value').val());
+    var i = Number($('#edit-field-ts-grant-und-8-field-ts-grant-percent-und-0-value').val());
+    var j = Number($('#edit-field-ts-grant-und-9-field-ts-grant-percent-und-0-value').val());
+    $('#edit-field-ts-grant-total-und-0-value').val(a+b+c+d+e+f+g+h+i+j);
+  });
+
 });
