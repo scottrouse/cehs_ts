@@ -250,12 +250,15 @@ function cehs_ts_theme() {
 }
 
 
+/**
+ * Implements hook_init().
+ */
+function cehs_ts_init() {
+  drupal_add_js(drupal_get_path('module', 'cehs_ts').'/js/biweekly.js', 'file');
+  drupal_add_js(drupal_get_path('module', 'cehs_ts').'/js/jquery.validate.js', 'file');
+}
 
 
-
-drupal_add_js(drupal_get_path('module', 'cehs_ts').'/js/biweekly.js', 'file');
-
-drupal_add_js(drupal_get_path('module', 'cehs_ts').'/js/jquery.validate.js', 'file');
 
 
 /* module_load_include('inc', 'cehs_ts', 'cehs_ts_node_form_alter'); */
