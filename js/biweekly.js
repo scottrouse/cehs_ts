@@ -888,6 +888,16 @@ jQuery(document).ready(function($){
       "field_a31[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on <em>"+ $day31 +"</em>.",
       "field_s31[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on <em>"+ $day31 +"</em>.",
       "field_t31[und][0][value]": "Your Total Hours may not exceed {1} on <em>"+ $day31 +"</em>.",
+      "field_ts_grant[und][0][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][1][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][2][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][3][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][4][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][5][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][6][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][7][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][8][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_ts_grant[und][9][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
 
     }
   });
