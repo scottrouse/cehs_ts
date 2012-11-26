@@ -860,4 +860,17 @@ jQuery(document).ready(function($){
     }
   });
   
+  $('#edit-field-ts-grant-und-0-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-1-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-2-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-3-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-4-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-5-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-6-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-7-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-8-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-9-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-total-und-0-value').change(function() {
+    var a = Number($('#edit-field-ts-grant-und-0-field-ts-grant-percent-und-0-value').val());
+    var b = Number($('#edit-field-ts-grant-und-1-field-ts-grant-percent-und-0-value').val());
+    var c = Number($('#edit-field-ts-grant-und-2-field-ts-grant-percent-und-0-value').val());
+    var d = Number($('#edit-field-ts-grant-und-3-field-ts-grant-percent-und-0-value').val());
+    var e = Number($('#edit-field-ts-grant-und-4-field-ts-grant-percent-und-0-value').val());
+    var f = Number($('#edit-field-ts-grant-und-5-field-ts-grant-percent-und-0-value').val());
+    var g = Number($('#edit-field-ts-grant-und-6-field-ts-grant-percent-und-0-value').val());
+    var h = Number($('#edit-field-ts-grant-und-7-field-ts-grant-percent-und-0-value').val());
+    var i = Number($('#edit-field-ts-grant-und-8-field-ts-grant-percent-und-0-value').val());
+    var j = Number($('#edit-field-ts-grant-und-9-field-ts-grant-percent-und-0-value').val());
+    $('#edit-field-ts-grant-total-und-0-value').val(a+b+c+d+e+f+g+h+i+j);
+  });
 });
