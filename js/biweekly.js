@@ -723,6 +723,46 @@ jQuery(document).ready(function($){
         number: true,
         range: [0,8]
       },
+      "field_ts_grant[und][0][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][1][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][2][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][3][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][4][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][5][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][6][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][7][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][8][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
+      "field_ts_grant[und][9][field_ts_grant_percent][und][0][value]": {
+        number: true,
+        range: [0,100]
+      },
 
       /* @todo - BRAD - Copy the four rules above (from "field_r02[und]... to the closing brace and comma above this line).
       Paste them above this comment and change the "02" to "03" in all four. Repeat through field 31. */
@@ -873,4 +913,5 @@ jQuery(document).ready(function($){
     var j = Number($('#edit-field-ts-grant-und-9-field-ts-grant-percent-und-0-value').val());
     $('#edit-field-ts-grant-total-und-0-value').val(a+b+c+d+e+f+g+h+i+j);
   });
+
 });
