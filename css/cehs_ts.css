@@ -39,3 +39,10 @@
   margin-right: 1em;
 }
 
+.node-type-ts-biweekly .node-unpublished {
+  background: none;
+}
+
+.node-type-ts-biweekly .unpublished {
+  display: none;
+}
