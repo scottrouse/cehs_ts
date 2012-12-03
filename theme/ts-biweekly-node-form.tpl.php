@@ -3,6 +3,10 @@
   // Retrieve the NID of the referenced Pay Period.
   $pay_period_id = $form['field_pay_period_ref']['und']['#default_value'];
   
+  $pay_period_id2 = $_REQUEST['field_pay_period_ref'];
+  
+  $pay_period_name = $form['field_pay_period_ref']['und']['#options'][$pay_period_id2];
+  
   // Given Pay Period NID, get start date.
   $pay_period_start = $node->field_period_dates['0'];
   $node = node_load($pay_period_id[0]); // @todo - set some error handling if noderef from url isn't used (node/add/foo fails)
@@ -90,6 +94,7 @@
 <p>Author: <?php echo($author)?></p>
 <p>Empl Name: <?php echo($full_name)?></p>
 
+<p>Pay Period: <?php echo $pay_period_name?></p>
 </div>
 -->
 
@@ -109,10 +114,10 @@
 </div>
 
 
-<table summary="A spreadsheet-like form containing hours by category per day for this seven day period." id="week1">
+<table summary="A spreadsheet-like form containing hours by category per day for this seven day period." id="week1" class="timesheet-table">
   <caption>Week One</caption>
   <thead>
-    <tr>
+    <tr class="table-center">
       <td></td>
       <th abbr="<?php print date($format_day, $day1)?>, <?php print date($format_medium, $day1)?>" id="day01"><?php print date($format_day, $day1)?> <br /><?php print date($format_long, $day1)?></th>
       <th abbr="<?php print date($format_day, $day2)?>, <?php print date($format_medium, $day2)?>" id="day02"><?php print date($format_day, $day2)?> <br /><?php print date($format_long, $day2)?></th>
@@ -169,10 +174,10 @@
   </tfoot>
 </table>
 
-<table summary="A spreadsheet-like form containing hours by category per day for this seven day period." id="week2">
+<table summary="A spreadsheet-like form containing hours by category per day for this seven day period." id="week2" class="timesheet-table">
   <caption>Week Two</caption>
   <thead>
-    <tr>
+    <tr class="table-center">
       <td></td>
       <th abbr="<?php print date($format_day, $day8)?>, <?php print date($format_medium, $day8)?>" id="day08"><?php print date($format_day, $day8)?> <br /><?php print date($format_long, $day8) ?></th>
       <th abbr="<?php print date($format_day, $day9)?>, <?php print date($format_medium, $day9)?>" id="day09"><?php print date($format_day, $day9)?> <br /><?php print date($format_long, $day9) ?></th>
