@@ -349,7 +349,27 @@
       </tr>
     </tfoot>
   </table>
-    
+  
+  <table summary="@todo - put in summary" id="grant-table">
+    <caption>Grants</caption>
+    <thead>
+      <tr class="table-center">
+        <th>Grant</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><?php print render($content['field_grant01_ref']); ?></td>
+        <td><?php print render($content['field_grant01_perc']); ?></td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <td><?php print render($content['field_ts_grant_total']); ?></td>
+      </tr>
+    </tbody>
+  </table>
+  
   </div>
   
 
