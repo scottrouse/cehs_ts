@@ -1,3 +1,9 @@
 #ts-biweekly-node-form {
   
 }
+
+
+#ts-biweekly-node-form #field-ts-grant-values .field-name-field-ts-grant-ref {
+  float: left;
+  margin-right: 10px;
+}
