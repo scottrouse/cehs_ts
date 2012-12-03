@@ -260,6 +260,7 @@ function cehs_ts_theme() {
 function cehs_ts_init() {
   drupal_add_js(drupal_get_path('module', 'cehs_ts').'/js/biweekly.js', 'file');
   drupal_add_js(drupal_get_path('module', 'cehs_ts').'/js/jquery.validate.js', 'file');
+  drupal_add_css(drupal_get_path('module', 'cehs_ts').'/css/cehs_ts.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
 }
 
 
