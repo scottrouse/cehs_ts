@@ -231,6 +231,9 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
       $form['field_t14']['und']['0']['value']['#default_value'] = '8';
       $form['field_t14']['und']['0']['value']['#title'] = '';
       $form['field_t14']['und']['0']['value']['#size'] = '2';
+      $form['field_grant01_ref']['und']['#title'] = '';
+      $form['field_grant01_perc']['und']['0']['value']['#title'] = '';
+      $form['field_grant01_perc']['und']['0']['value']['#size'] = '2';
 
 /*
       if (!empty($form_state['values']['field_r02'])) {
