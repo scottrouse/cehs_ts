@@ -73,6 +73,7 @@
 
 
 <!-- @todo - remove before publishing -->
+<!--
 <div style="border:2px dashed red; padding: 10px; margin: 10px; background-color: #ccc;">
 
 <p>This is the "ts-bi-weekly-node-form.tpl.php" template file output.</p>
@@ -90,6 +91,7 @@
 <p>Empl Name: <?php echo($full_name)?></p>
 
 </div>
+-->
 
 
 
