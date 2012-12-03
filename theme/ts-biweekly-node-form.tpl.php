@@ -235,5 +235,21 @@
 </table>
 
 
+<table summary="@todo - put in summary" id="grant-table">
+  <caption>Grants</caption>
+  <thead>
+    <tr class="table-center">
+      <th>Grant</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><?php print drupal_render($form['field_grant01_ref']); ?></td>
+      <td><?php print drupal_render($form['field_grant01_perc']); ?></td>
+    </tr>
+  </tbody>
+</table>
+
 
 <?php print drupal_render_children($form); ?>
