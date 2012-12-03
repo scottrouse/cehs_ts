@@ -248,6 +248,10 @@
       <td><?php print drupal_render($form['field_grant01_ref']); ?></td>
       <td><?php print drupal_render($form['field_grant01_perc']); ?></td>
     </tr>
+    <tr>
+      <th>Total</th>
+      <td><?php print drupal_render($form['field_ts_grant_total']); ?></td>
+    </tr>
   </tbody>
 </table>
 
