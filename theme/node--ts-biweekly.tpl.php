@@ -82,19 +82,12 @@
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <h2>Biweekly test tpl file (module)</h2>
-
-  <?php print $user_picture; ?>
 
   <?php print render($title_prefix); ?>
   <?php if (!$page && $title): ?>
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
-  <?php if ($unpublished): ?>
-    <div class="unpublished"><?php print t('Unpublished'); ?></div>
-  <?php endif; ?>
 
   <?php if ($display_submitted): ?>
     <div class="submitted">
@@ -103,15 +96,216 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
+  
+  <?php dsm($node);?>
+  
+    <!-- <?php print render($content['field_employee_name']) ?> -->
+    
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_r01']);
+      hide($content['field_r02']);
+      hide($content['field_r03']);
+      hide($content['field_r04']);
+      hide($content['field_r05']);
+      hide($content['field_r06']);
+      hide($content['field_r07']);
+      hide($content['field_r08']);
+      hide($content['field_r09']);
       print render($content);
     ?>
+    
+    
+    <?php
+      
+      $start_date_node = $node->field_pay_period_ref[0]['entity']->field_period_dates['und'][0]['value'];
+      
+      $pay_period_start3 = field_get_items('node', $node, 'field_period_dates');
+      
+      /* $start_date_raw = $pay_period_start3['0']['value']; */
+      
+      /* $start_date_raw $start_date_node; */
+      $start_date_raw = '2012-10-25 00:00:00';
+      
+      /* $start_date = strtotime($pay_period_start3['0']['value']); */
+      $start_date = strtotime($start_date_raw);
+      
+
+    ?>
+    
+    
+    <?php
+      // Misc variables
+      /* $start_date = time(); */ // @todo replace this with pull from 
+      $format_long = 'm/d/Y'; // PHP Date format for display in timesheet
+      $format_medium = 'm/d'; // Month and Day. i.e. - "06/18"
+      $format_day = 'l'; // Day of week. i.e.- "Wednesday"
+      $day = '86400'; // Seconds in a day
+      /* $employee_name = 'Scott Rouse'; */
+      
+      
+      
+      $day1 = $start_date;
+      $day2 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +1 day");
+      $day3 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +2 days");
+      $day4 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +3 days");
+      $day5 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +4 days");
+      $day6 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +5 days");
+      $day7 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +6 days");
+      $day8 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +7 days");
+      $day9 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +8 days");
+      $day10 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +9 days");
+      $day11 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +10 days");
+      $day12 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +11 days");
+      $day13 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +12 days");
+      $day14 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +13 days");
+      $day15 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +14 days");
+      $day16 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +15 days");
+      $day17 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +16 days");
+      $day18 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +17 days");
+      $day19 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +18 days");
+      $day20 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +19 days");
+      $day21 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +20 days");
+      $day22 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +21 days");
+      $day23 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +22 days");
+      $day24 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +23 days");
+      $day25 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +24 days");
+      $day26 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +25 days");
+      $day27 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +26 days");
+      $day28 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +27 days");
+      $day29 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +28 days");
+      $day30 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +29 days");
+      $day31 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +30 days");
+      
+
+    
+    ?>
+    
+    <table summary="Hours by category per day for this seven day period." id="week1" class="timesheet-table">
+    <caption>Week One</caption>
+    <thead>
+      <tr class="table-center">
+        <td></td>
+        <th abbr="<?php print date($format_day, $day1)?>, <?php print date($format_medium, $day1)?>" id="day01"><?php print date($format_day, $day1)?> <br /><?php print date($format_long, $day1)?></th>
+        <th abbr="<?php print date($format_day, $day2)?>, <?php print date($format_medium, $day2)?>" id="day02"><?php print date($format_day, $day2)?> <br /><?php print date($format_long, $day2)?></th>
+        <th abbr="<?php print date($format_day, $day3)?>, <?php print date($format_medium, $day3)?>" id="day03"><?php print date($format_day, $day3)?> <br /><?php print date($format_long, $day3)?></th>
+        <th abbr="<?php print date($format_day, $day4)?>, <?php print date($format_medium, $day4)?>" id="day04"><?php print date($format_day, $day4)?> <br /><?php print date($format_long, $day4)?></th>
+        <th abbr="<?php print date($format_day, $day5)?>, <?php print date($format_medium, $day5)?>" id="day05"><?php print date($format_day, $day5)?> <br /><?php print date($format_long, $day5)?></th>
+        <th abbr="<?php print date($format_day, $day6)?>, <?php print date($format_medium, $day6)?>" id="day06"><?php print date($format_day, $day6)?> <br /><?php print date($format_long, $day6)?></th>
+        <th abbr="<?php print date($format_day, $day7)?>, <?php print date($format_medium, $day7)?>" id="day07"><?php print date($format_day, $day7)?> <br /><?php print date($format_long, $day7)?></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th abbr="regular" id="regular1">Regular Hours</th>
+        <td><?php print render($content['field_r01']); ?></td>
+        <td><?php print render($content['field_r02']); ?></td>
+        <td><?php print render($content['field_r03']); ?></td>
+        <td><?php print render($content['field_r04']); ?></td>
+        <td><?php print render($content['field_r05']); ?></td>
+        <td><?php print render($content['field_r06']); ?></td>
+        <td><?php print render($content['field_r07']); ?></td>
+      </tr>
+      <tr>
+        <th abbr="annual" id="annual1">Annual Leave</th>
+        <td><?php print render($content['field_a01']); ?></td>
+        <td><?php print render($content['field_a02']); ?></td>
+        <td><?php print render($content['field_a03']); ?></td>
+        <td><?php print render($content['field_a04']); ?></td>
+        <td><?php print render($content['field_a05']); ?></td>
+        <td><?php print render($content['field_a06']); ?></td>
+        <td><?php print render($content['field_a07']); ?></td>
+      </tr>
+      <tr>
+        <th abbr="sick" id="sick1">Sick Leave</th>
+        <td><?php print render($content['field_s01']); ?></td>
+        <td><?php print render($content['field_s02']); ?></td>
+        <td><?php print render($content['field_s03']); ?></td>
+        <td><?php print render($content['field_s04']); ?></td>
+        <td><?php print render($content['field_s05']); ?></td>
+        <td><?php print render($content['field_s06']); ?></td>
+        <td><?php print render($content['field_s07']); ?></td>
+      </tr>
+    <tbody>
+    <tfoot>
+      <tr>
+        <th id="total1">Total</th>
+        <td><?php print render($content['field_t01']); ?></td>
+        <td><?php print render($content['field_t02']); ?></td>
+        <td><?php print render($content['field_t03']); ?></td>
+        <td><?php print render($content['field_t04']); ?></td>
+        <td><?php print render($content['field_t05']); ?></td>
+        <td><?php print render($content['field_t06']); ?></td>
+        <td><?php print render($content['field_t07']); ?></td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  <table summary="Hours by category per day for this seven day period." id="week2" class="timesheet-table">
+    <caption>Week Two</caption>
+    <thead>
+      <tr class="table-center">
+        <td></td>
+        <th abbr="<?php print date($format_day, $day8)?>, <?php print date($format_medium, $day8)?>" id="day08"><?php print date($format_day, $day8)?> <br /><?php print date($format_long, $day8) ?></th>
+        <th abbr="<?php print date($format_day, $day9)?>, <?php print date($format_medium, $day9)?>" id="day09"><?php print date($format_day, $day9)?> <br /><?php print date($format_long, $day9) ?></th>
+        <th abbr="<?php print date($format_day, $day10)?>, <?php print date($format_medium, $day10)?>" id="day10"><?php print date($format_day, $day10)?> <br /><?php print date($format_long, $day10) ?></th>
+        <th abbr="<?php print date($format_day, $day11)?>, <?php print date($format_medium, $day11)?>" id="day11"><?php print date($format_day, $day11)?> <br /><?php print date($format_long, $day11) ?></th>
+        <th abbr="<?php print date($format_day, $day12)?>, <?php print date($format_medium, $day12)?>" id="day12"><?php print date($format_day, $day12)?> <br /><?php print date($format_long, $day12) ?></th>
+        <th abbr="<?php print date($format_day, $day13)?>, <?php print date($format_medium, $day13)?>" id="day13"><?php print date($format_day, $day13)?> <br /><?php print date($format_long, $day13) ?></th>
+        <th abbr="<?php print date($format_day, $day14)?>, <?php print date($format_medium, $day14)?>" id="day14"><?php print date($format_day, $day14)?> <br /><?php print date($format_long, $day14) ?></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th abbr="regular" id="regular2">Regular Hours</th>
+        <td><?php print render($content['field_r08']); ?></td>
+        <td><?php print render($content['field_r09']); ?></td>
+        <td><?php print render($content['field_r10']); ?></td>
+        <td><?php print render($content['field_r11']); ?></td>
+        <td><?php print render($content['field_r12']); ?></td>
+        <td><?php print render($content['field_r13']); ?></td>
+        <td><?php print render($content['field_r14']); ?></td>
+      </tr>
+      <tr>
+        <th abbr="annual" id="annual2">Annual Leave</th>
+        <td><?php print render($content['field_a08']); ?></td>
+        <td><?php print render($content['field_a09']); ?></td>
+        <td><?php print render($content['field_a10']); ?></td>
+        <td><?php print render($content['field_a11']); ?></td>
+        <td><?php print render($content['field_a12']); ?></td>
+        <td><?php print render($content['field_a13']); ?></td>
+        <td><?php print render($content['field_a14']); ?></td>
+      </tr>
+      <tr>
+        <th abbr="sick" id="sick2">Sick Leave</th>
+        <td><?php print render($content['field_s08']); ?></td>
+        <td><?php print render($content['field_s09']); ?></td>
+        <td><?php print render($content['field_s10']); ?></td>
+        <td><?php print render($content['field_s11']); ?></td>
+        <td><?php print render($content['field_s12']); ?></td>
+        <td><?php print render($content['field_s13']); ?></td>
+        <td><?php print render($content['field_s14']); ?></td>
+      </tr>
+    <tbody>
+    <tfoot>
+      <tr>
+        <th id="total2">Total</th>
+        <td><?php print render($content['field_t08']); ?></td>
+        <td><?php print render($content['field_t09']); ?></td>
+        <td><?php print render($content['field_t10']); ?></td>
+        <td><?php print render($content['field_t11']); ?></td>
+        <td><?php print render($content['field_t12']); ?></td>
+        <td><?php print render($content['field_t13']); ?></td>
+        <td><?php print render($content['field_t14']); ?></td>
+      </tr>
+    </tfoot>
+  </table>
+    
   </div>
   
-  <h2>Biweekly test tpl file (module)</h2>
+
 
   <?php print render($content['links']); ?>
 
