@@ -40,7 +40,7 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
     case 'ts_biweekly_node_form':
       $pay_period_id = $_REQUEST['field_pay_period_ref'];
       $pay_period_name = $form['field_pay_period_ref']['und']['#options'][$pay_period_id];    
-      if (!$form['title']) {
+      if (empty($form_state['values']['title'])) {
         $form['title']['#default_value'] = $employee_id . $pay_period_name;
       };
       
@@ -50,7 +50,7 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
       $form['field_employee_id']['und']['0']['value']['#default_value'] = $employee_id;
       $form['field_employee_id']['#disabled'] = TRUE;
       
-      if (!$form['field_r01']['und']['0']['value']) {
+      if (empty($form_state['values']['field_r01'])) {
         $form['field_r01']['und']['0']['value']['#default_value'] = '8';
       };
       
@@ -278,6 +278,9 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
 
 
       /* $form['actions']['submit']['#value'] = t('Save Me'); */
+      
+      
+      
       
       
     // That's it. Stop checking form ids.
