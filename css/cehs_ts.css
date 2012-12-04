@@ -3,33 +3,35 @@
 }
 
 
+/*
 #ts-biweekly-node-form #field-ts-grant-values .field-name-field-ts-grant-ref {
   float: left;
   margin-right: 10px;
 }
+*/
 
 #ts-biweekly-node-form .form-item-title {
   display: none;
 }
 
 
-#ts-biweekly-node-form table.timesheet-table {
+#ts-biweekly-node-form table.timesheet-table, #ts-biweekly-node-form table#grant-table {
   border-collapse: separate;
 }
 
-#ts-biweekly-node-form table.timesheet-table caption {
+#ts-biweekly-node-form table.timesheet-table caption, #ts-biweekly-node-form table#grant-table caption {
   font-size: 1.3em;
   margin-bottom: 0.5em;
   font-weight: bold;
   margin-top: 1.5em;
 }
 
-#ts-biweekly-node-form table.timesheet-table td {
+#ts-biweekly-node-form table.timesheet-table td, #ts-biweekly-node-form table#grant-table td {
   border: 1px solid #BEBFB9;
   border-collapse: separate;
 }
 
-#ts-biweekly-node-form table.timesheet-table, #ts-biweekly-node-form .table-center th {
+#ts-biweekly-node-form table.timesheet-table, #ts-biweekly-node-form .table-center th, #ts-biweekly-node-form table#grant-table, #ts-biweekly-node-form table#grant-table th {
   text-align: center;
   vertical-align: middle;
 }
