@@ -899,7 +899,7 @@ jQuery(document).ready(function($){
       "field_grant_08_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
       "field_grant_09_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
       "field_grant_10_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant_total[und][0][value]": "The total grant percentage must equal {1}.",
+      "field_ts_grant_total[und][0][value]": "The total grant percentage must equal 100.",
     }
   });
   
