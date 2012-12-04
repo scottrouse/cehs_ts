@@ -15,18 +15,18 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   $uid = $user->uid;
   $account = user_load($uid);
   
-  
-  
   $profile = profile2_load_by_user($account);
   
-  $full_name = ''; // Set variable to NULL initially.
-  if (profile2_load_by_user($account, '01_main')) { // Check if main profile exists
-    $fname_field = field_get_items('profile2', $profile['01_main'], 'field_user_first_name');
-    $lname_field = field_get_items('profile2', $profile['01_main'], 'field_user_last_name');
+  $employee_name = ''; // Set variable to NULL initially.
+  if (profile2_load_by_user($account, 'payroll_profile')) { // Check if main profile exists
+    $name = field_get_items('profile2', $profile['payroll_profile'], 'field_payroll_name');
+    $first = $name[0]['safe']['given'];
+    $middle = $name[0]['safe']['middle'];
+    $last = $name[0]['safe']['family'];
+    $suff = $name[0]['safe']['generational'];
     
-    $first_name = $fname_field[0]['value'];
-    $last_name = $lname_field[0]['value'];
-    $full_name = $first_name . ' ' . $last_name;
+    $full_name = implode(' ', array($first, $middle, $last, $suff));
+    $employee_name = trim(preg_replace('/\s+/', ' ', $full_name));
   };
   
   $employee_id = ''; // Set variable to NULL initially.
@@ -43,7 +43,7 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
     
       $form['title']['#default_value'] = $employee_id . $pay_period_name;
       $form['title']['#disabled'] = TRUE;
-      $form['field_employee_name']['und']['0']['value']['#default_value'] = $full_name;
+      $form['field_employee_name']['und']['0']['value']['#default_value'] = $employee_name;
       $form['field_employee_name']['#disabled'] = TRUE;
       $form['field_employee_id']['und']['0']['value']['#default_value'] = $employee_id;
       $form['field_employee_id']['#disabled'] = TRUE;
