@@ -719,43 +719,43 @@ jQuery(document).ready(function($){
         number: true,
         range: [0,8]
       },
-      "field_ts_grant[und][0][field_ts_grant_percent][und][0][value]": {
+      "field_grant_01_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][1][field_ts_grant_percent][und][0][value]": {
+      "field_grant_02_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][2][field_ts_grant_percent][und][0][value]": {
+      "field_grant_03_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][3][field_ts_grant_percent][und][0][value]": {
+      "field_grant_04_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][4][field_ts_grant_percent][und][0][value]": {
+      "field_grant_05_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][5][field_ts_grant_percent][und][0][value]": {
+      "field_grant_06_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][6][field_ts_grant_percent][und][0][value]": {
+      "field_grant_07_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][7][field_ts_grant_percent][und][0][value]": {
+      "field_grant_08_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][8][field_ts_grant_percent][und][0][value]": {
+      "field_grant_09_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
-      "field_ts_grant[und][9][field_ts_grant_percent][und][0][value]": {
+      "field_grant_10_perc[und][0][value]": {
         number: true,
         range: [0,100]
       },
@@ -889,31 +889,31 @@ jQuery(document).ready(function($){
       "field_a31[und][0][value]": "You may only record between {0} and {1} <em>Annual Leave</em> hours on <em>"+ $day31 +"</em>.",
       "field_s31[und][0][value]": "You may only record between {0} and {1} <em>Sick Leave</em> hours on <em>"+ $day31 +"</em>.",
       "field_t31[und][0][value]": "Your Total Hours may not exceed {1} on <em>"+ $day31 +"</em>.",
-      "field_ts_grant[und][0][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][1][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][2][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][3][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][4][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][5][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][6][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][7][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][8][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
-      "field_ts_grant[und][9][field_ts_grant_percent][und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_01_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_02_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_03_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_04_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_05_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_06_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_07_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_08_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_09_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
+      "field_grant_10_perc[und][0][value]": "Grant percentage must be between {0} and {1}.",
       "field_ts_grant_total[und][0][value]": "The total grant percentage must equal {1}.",
     }
   });
   
-  $('#edit-field-ts-grant-und-0-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-1-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-2-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-3-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-4-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-5-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-6-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-7-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-8-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-und-9-field-ts-grant-percent-und-0-value,#edit-field-ts-grant-total-und-0-value').change(function() {
-    var a = Number($('#edit-field-ts-grant-und-0-field-ts-grant-percent-und-0-value').val());
-    var b = Number($('#edit-field-ts-grant-und-1-field-ts-grant-percent-und-0-value').val());
-    var c = Number($('#edit-field-ts-grant-und-2-field-ts-grant-percent-und-0-value').val());
-    var d = Number($('#edit-field-ts-grant-und-3-field-ts-grant-percent-und-0-value').val());
-    var e = Number($('#edit-field-ts-grant-und-4-field-ts-grant-percent-und-0-value').val());
-    var f = Number($('#edit-field-ts-grant-und-5-field-ts-grant-percent-und-0-value').val());
-    var g = Number($('#edit-field-ts-grant-und-6-field-ts-grant-percent-und-0-value').val());
-    var h = Number($('#edit-field-ts-grant-und-7-field-ts-grant-percent-und-0-value').val());
-    var i = Number($('#edit-field-ts-grant-und-8-field-ts-grant-percent-und-0-value').val());
-    var j = Number($('#edit-field-ts-grant-und-9-field-ts-grant-percent-und-0-value').val());
+  $('#edit-field-grant-01-perc-und-0-value,#edit-field-grant-02-perc-und-0-value,#edit-field-grant-03-perc-und-0-value,#edit-field-grant-04-perc-und-0-value,#edit-field-grant-05-perc-und-0-value,#edit-field-grant-06-perc-und-0-value,#edit-field-grant-07-perc-und-0-value,#edit-field-grant-08-perc-und-0-value,#edit-field-grant-09-perc-und-0-value,#edit-field-grant-10-perc-und-0-value,#edit-field-ts-grant-total-und-0-value').change(function() {
+    var a = Number($('#edit-field-grant-01-perc-und-0-value').val());
+    var b = Number($('#edit-field-grant-02-perc-und-0-value').val());
+    var c = Number($('#edit-field-grant-03-perc-und-0-value').val());
+    var d = Number($('#edit-field-grant-04-perc-und-0-value').val());
+    var e = Number($('#edit-field-grant-05-perc-und-0-value').val());
+    var f = Number($('#edit-field-grant-06-perc-und-0-value').val());
+    var g = Number($('#edit-field-grant-07-perc-und-0-value').val());
+    var h = Number($('#edit-field-grant-08-perc-und-0-value').val());
+    var i = Number($('#edit-field-grant-09-perc-und-0-value').val());
+    var j = Number($('#edit-field-grant-010-perc-und-0-value').val());
     $('#edit-field-ts-grant-total-und-0-value').val(a+b+c+d+e+f+g+h+i+j);
   });
 
