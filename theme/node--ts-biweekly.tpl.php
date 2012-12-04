@@ -97,8 +97,6 @@
 
   <div class="content"<?php print $content_attributes; ?>>
   
-  <?php dsm($node);?>
-  
     <!-- <?php print render($content['field_employee_name']) ?> -->
     
     <?php
@@ -363,47 +361,38 @@
         <td><?php print render($content['field_grant_01_ref']); ?></td>
         <td><?php print render($content['field_grant_01_perc']); ?></td>
       </tr>
-      <tr>
-      <tr>
-        <td><?php print render($content['field_grant_02_ref']); ?></td>
-        <td><?php print render($content['field_grant_02_perc']); ?></td>
-      </tr>
-      <tr>
+      <?php if ($content['field_grant_02_ref']) {
+        echo '<tr><td>' . print render($content['field_grant_02_ref']) . '</td><td>' . print render($content['field_grant_02_perc']) . '</td></tr>';
+      }
+      ?>
       <tr>
         <td><?php print render($content['field_grant_03_ref']); ?></td>
         <td><?php print render($content['field_grant_03_perc']); ?></td>
       </tr>
       <tr>
-      <tr>
         <td><?php print render($content['field_grant_04_ref']); ?></td>
         <td><?php print render($content['field_grant_04_perc']); ?></td>
       </tr>
-      <tr>
       <tr>
         <td><?php print render($content['field_grant_05_ref']); ?></td>
         <td><?php print render($content['field_grant_05_perc']); ?></td>
       </tr>
       <tr>
-      <tr>
         <td><?php print render($content['field_grant_06_ref']); ?></td>
         <td><?php print render($content['field_grant_06_perc']); ?></td>
       </tr>
-      <tr>
       <tr>
         <td><?php print render($content['field_grant_07_ref']); ?></td>
         <td><?php print render($content['field_grant_07_perc']); ?></td>
       </tr>
       <tr>
-      <tr>
         <td><?php print render($content['field_grant_08_ref']); ?></td>
         <td><?php print render($content['field_grant_08_perc']); ?></td>
       </tr>
       <tr>
-      <tr>
         <td><?php print render($content['field_grant_09_ref']); ?></td>
         <td><?php print render($content['field_grant_09_perc']); ?></td>
       </tr>
-      <tr>
       <tr>
         <td><?php print render($content['field_grant_10_ref']); ?></td>
         <td><?php print render($content['field_grant_10_perc']); ?></td>
