@@ -40,14 +40,20 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
     case 'ts_biweekly_node_form':
       $pay_period_id = $_REQUEST['field_pay_period_ref'];
       $pay_period_name = $form['field_pay_period_ref']['und']['#options'][$pay_period_id];    
-    
-      $form['title']['#default_value'] = $employee_id . $pay_period_name;
+      if (!$form['title']) {
+        $form['title']['#default_value'] = $employee_id . $pay_period_name;
+      };
+      
       $form['title']['#disabled'] = TRUE;
       $form['field_employee_name']['und']['0']['value']['#default_value'] = $employee_name;
       $form['field_employee_name']['#disabled'] = TRUE;
       $form['field_employee_id']['und']['0']['value']['#default_value'] = $employee_id;
       $form['field_employee_id']['#disabled'] = TRUE;
-      $form['field_r01']['und']['0']['value']['#default_value'] = '8';
+      
+      if (!$form['field_r01']['und']['0']['value']) {
+        $form['field_r01']['und']['0']['value']['#default_value'] = '8';
+      };
+      
       $form['field_r01']['und']['0']['value']['#title'] = '';
       $form['field_r01']['und']['0']['value']['#size'] = '2';
       $form['field_r02']['und']['0']['value']['#default_value'] = '8';
