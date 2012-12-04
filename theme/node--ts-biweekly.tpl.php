@@ -364,6 +364,51 @@
         <td><?php print render($content['field_grant01_perc']); ?></td>
       </tr>
       <tr>
+      <tr>
+        <td><?php print render($content['field_grant02_ref']); ?></td>
+        <td><?php print render($content['field_grant02_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant03_ref']); ?></td>
+        <td><?php print render($content['field_grant03_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant04_ref']); ?></td>
+        <td><?php print render($content['field_grant04_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant05_ref']); ?></td>
+        <td><?php print render($content['field_grant05_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant06_ref']); ?></td>
+        <td><?php print render($content['field_grant06_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant07_ref']); ?></td>
+        <td><?php print render($content['field_grant07_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant08_ref']); ?></td>
+        <td><?php print render($content['field_grant08_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant09_ref']); ?></td>
+        <td><?php print render($content['field_grant09_perc']); ?></td>
+      </tr>
+      <tr>
+      <tr>
+        <td><?php print render($content['field_grant10_ref']); ?></td>
+        <td><?php print render($content['field_grant10_perc']); ?></td>
+      </tr>
+      <tr>
         <th>Total</th>
         <td><?php print render($content['field_ts_grant_total']); ?></td>
       </tr>
