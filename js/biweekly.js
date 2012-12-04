@@ -913,7 +913,7 @@ jQuery(document).ready(function($){
     var g = Number($('#edit-field-grant-07-perc-und-0-value').val());
     var h = Number($('#edit-field-grant-08-perc-und-0-value').val());
     var i = Number($('#edit-field-grant-09-perc-und-0-value').val());
-    var j = Number($('#edit-field-grant-010-perc-und-0-value').val());
+    var j = Number($('#edit-field-grant-10-perc-und-0-value').val());
     $('#edit-field-ts-grant-total-und-0-value').val(a+b+c+d+e+f+g+h+i+j);
   });
 
