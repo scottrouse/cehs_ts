@@ -159,26 +159,6 @@
       hide($content['field_t12']);
       hide($content['field_t13']);
       hide($content['field_t14']);
-      hide($content['field_grant_01_ref']);
-      hide($content['field_grant_01_perc']);
-      hide($content['field_grant_02_ref']);
-      hide($content['field_grant_02_perc']);
-      hide($content['field_grant_03_ref']);
-      hide($content['field_grant_03_perc']);
-      hide($content['field_grant_04_ref']);
-      hide($content['field_grant_04_perc']);
-      hide($content['field_grant_05_ref']);
-      hide($content['field_grant_05_perc']);
-      hide($content['field_grant_06_ref']);
-      hide($content['field_grant_06_perc']);
-      hide($content['field_grant_07_ref']);
-      hide($content['field_grant_07_perc']);
-      hide($content['field_grant_08_ref']);
-      hide($content['field_grant_08_perc']);
-      hide($content['field_grant_09_ref']);
-      hide($content['field_grant_09_perc']);
-      hide($content['field_grant_10_ref']);
-      hide($content['field_grant_10_perc']);
       print render($content);
     ?>
     
