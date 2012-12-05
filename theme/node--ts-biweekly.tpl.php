@@ -366,35 +366,35 @@
       }
       ?>
       <?php if ($content['field_grant_03_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_03_ref']) . '</td><td>' . print render($content['field_grant_03_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_03_ref']) . '</td><td>' . print render($content['field_grant_03_perc']) . '</td></tr>';
       } 
       ?>
       <?php if ($content['field_grant_04_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_04_ref']) . '</td><td>' . print render($content['field_grant_04_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_04_ref']) . '</td><td>' . print render($content['field_grant_04_perc']) . '</td></tr>';
       } 
       ?>
       <?php if ($content['field_grant_05_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_05_ref']) . '</td><td>' . print render($content['field_grant_05_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_05_ref']) . '</td><td>' . print render($content['field_grant_05_perc']) . '</td></tr>';
       } 
       ?>
      <?php if ($content['field_grant_06_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_06_ref']) . '</td><td>' . print render($content['field_grant_06_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_06_ref']) . '</td><td>' . print render($content['field_grant_06_perc']) . '</td></tr>';
       }
        ?>
       <?php if ($content['field_grant_07_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_07_ref']) . '</td><td>' . print render($content['field_grant_07_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_07_ref']) . '</td><td>' . print render($content['field_grant_07_perc']) . '</td></tr>';
       } 
       ?>
       <?php if ($content['field_grant_08_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_08_ref']) . '</td><td>' . print render($content['field_grant_08_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_08_ref']) . '</td><td>' . print render($content['field_grant_08_perc']) . '</td></tr>';
       } 
       ?>
       <?php if ($content['field_grant_09_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_09_ref']) . '</td><td>' . print render($content['field_grant_09_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_09_ref']) . '</td><td>' . print render($content['field_grant_09_perc']) . '</td></tr>';
       } 
       ?>   
       <?php if ($content['field_grant_10_ref']) {
-	    echo '<tr><td>' . print render($content['field_grant_10_ref']) . '</td><td>' . print render($content['field_grant_10_perc']) . '</td></tr>';
+	      echo '<tr><td>' . print render($content['field_grant_10_ref']) . '</td><td>' . print render($content['field_grant_10_perc']) . '</td></tr>';
       } 
       ?>   
         <tr>
