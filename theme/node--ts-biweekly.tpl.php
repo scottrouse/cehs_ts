@@ -358,6 +358,8 @@
   
       <fieldset>
       	<legend>Approvals</legend>
+      	
+      <?php print render($content['field_ts_status']) ?>	
       <?php print render($content['field_empl_approve_date']) ?>
       <?php print render($content['field_sup_approve_date']) ?>
       <?php print render($content['field_admin_approve_date']) ?>
