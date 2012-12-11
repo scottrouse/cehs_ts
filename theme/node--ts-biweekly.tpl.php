@@ -87,9 +87,12 @@
   
     <fieldset>
       <?php print render($content['field_employee_name']) ?>
-      
+      <?php print render($content['field_employee_id']) ?>
+      <?php print render($content['field_pay_period_ref']) ?>
     </fieldset>
     
+    <fieldset>
+    	<legend>Hours</legend>
     
     <?php
       
@@ -349,6 +352,16 @@
       </tr>
     </tbody>
   </table>
+  
+  </fieldset>
+  
+  
+      <fieldset>
+      <?php print render($content['field_empl_approve_date']) ?>
+      <?php print render($content['field_sup_approve_date']) ?>
+      <?php print render($content['field_admin_approve_date']) ?>
+      <?php print render($content['ffield_admin2_approve_date']) ?>
+      </fieldset>
   
   </div>
 
