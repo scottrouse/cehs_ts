@@ -277,10 +277,21 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
 */
 
 
-      /* $form['actions']['submit']['#value'] = t('Save Me'); */
+
+    // When employee approval field is 0, node has not yet been saved.
+    if ($form['field_employee_approval']['und']['#default_value'] == 0) {
+      $form['actions']['submit']['#value'] = t('Save and Send');
+    }
+    
+    // Check the status field to determine progress of node
+    $status = $form['field_ts_status']['und']['#default_value'][0];
+    if ( $status == '1') {
       
-      
-      
+    } elseif (($status == '2') || ($status == '3')) {
+      $form['actions']['submit']['#value'] = t('Approve');
+    } elseif ($status == '4') {
+      $form['actions']['submit']['#value'] = t('Save');
+    }
       
       
     // That's it. Stop checking form ids.
