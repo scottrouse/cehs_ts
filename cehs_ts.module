@@ -37,11 +37,9 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
   
   // switch will let us use different alters for each of the three timesheet forms
   switch ($form_id) {
-    case 'ts_biweekly_node_form':
-      $pay_period_id = $_REQUEST['field_pay_period_ref'];
-      $pay_period_name = $form['field_pay_period_ref']['und']['#options'][$pay_period_id];    
+    case 'ts_biweekly_node_form': 
       if (empty($form_state['values']['title'])) {
-        $form['title']['#default_value'] = $employee_id . $pay_period_name;
+        $form['title']['#default_value'] = 'CEHS Timesheet';
       };
       
       $form['title']['#disabled'] = TRUE;
