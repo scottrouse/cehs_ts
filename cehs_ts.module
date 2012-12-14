@@ -274,7 +274,7 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
       $form['field_t06']['und']['0']['value']['#default_value'] = '8';
       $form['field_t07']['und']['0']['value']['#default_value'] = '8';
       $form['field_t08']['und']['0']['value']['#default_value'] = '8';
-      $form['field_t09']['und']['0']['value']['#default_value'] = '0';
+      $form['field_t09']['und']['0']['value']['#default_value'] = '8';
       $form['field_t10']['und']['0']['value']['#default_value'] = '0';
       $form['field_t11']['und']['0']['value']['#default_value'] = '0';
       $form['field_t12']['und']['0']['value']['#default_value'] = '8';
