@@ -292,55 +292,55 @@
         <td><?php print render($content['field_grant_01_ref']); ?></td>
         <td><?php print render($content['field_grant_01_perc']); ?></td>
       </tr>
-      <?php if ($content['field_grant_02_ref']): ?>
+      <?php if (isset($content['field_grant_02_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_02_ref']); ?></td>
           <td><?php print render($content['field_grant_02_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_03_ref']): ?>
+      <?php if ($isset(content['field_grant_03_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_03_ref']); ?></td>
           <td><?php print render($content['field_grant_03_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_04_ref']): ?>
+      <?php if (isset($content['field_grant_04_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_04_ref']); ?></td>
           <td><?php print render($content['field_grant_04_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_05_ref']): ?>
+      <?php if (isset($content['field_grant_05_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_05_ref']); ?></td>
           <td><?php print render($content['field_grant_05_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_06_ref']): ?>
+      <?php if (isset($content['field_grant_06_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_06_ref']); ?></td>
           <td><?php print render($content['field_grant_06_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_07_ref']): ?>
+      <?php if (isset($content['field_grant_07_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_07_ref']); ?></td>
           <td><?php print render($content['field_grant_07_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_08_ref']): ?>
+      <?php if (isset($content['field_grant_08_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_08_ref']); ?></td>
           <td><?php print render($content['field_grant_08_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_09_ref']): ?>
+      <?php if (isset($content['field_grant_09_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_09_ref']); ?></td>
           <td><?php print render($content['field_grant_09_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($content['field_grant_10_ref']): ?>
+      <?php if (isset($content['field_grant_10_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_10_ref']); ?></td>
           <td><?php print render($content['field_grant_10_perc']); ?></td>
