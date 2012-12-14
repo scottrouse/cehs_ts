@@ -296,7 +296,7 @@ function cehs_ts_form_alter(&$form, &$form_state, $form_id) {
       $form['actions']['submit']['#value'] = t('Save');
     }
     
-    if (($status == '1') || ($form['field_employee_approval']['und']['#default_value'] == 0)) {
+    if (($status == '1') && ($form['field_employee_approval']['und']['#default_value'] == 0)) {
       // First Stage — Node is being created...not yet saved.
       /*
 $form['field_supervisor_approval']['#disabled'] = TRUE;
@@ -304,7 +304,7 @@ $form['field_supervisor_approval']['#disabled'] = TRUE;
 */
     }
     
-    if (($status == '1') && ($form['field_employee_approval']['und']['#default_value'] == 1)) {
+    if ((($status == '1') && ($form['field_employee_approval']['und']['#default_value'] == 1))  || (!($status == '1') && !($form['field_employee_approval']['und']['#default_value'] == 0) && ((!in_array('payroll first admin', array_values($user->roles))) || (!in_array('payroll final admin', array_values($user->roles))) || (!in_array('payroll administrator', array_values($user->roles)))))) {
       // Second Stage — Node has been created. Supervisor not approved.
       $form['field_r01']['#disabled'] = TRUE;
       $form['field_r02']['#disabled'] = TRUE;
