@@ -385,7 +385,6 @@ $form['field_supervisor_approval']['#disabled'] = TRUE;
       $form['field_grant_09_perc']['#disabled'] = TRUE;
       $form['field_grant_10_perc']['#disabled'] = TRUE;
       $form['field_ts_grant_total']['#disabled'] = TRUE;
-      // @todo — disable
     }
     
     if ($status == '2') {
