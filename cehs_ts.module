@@ -304,6 +304,16 @@ $form['field_supervisor_approval']['#disabled'] = TRUE;
 */
     }
     
+    if (($status == '1') && ($form['field_employee_approval']['und']['#default_value'] == 1)) {
+      $form['buttons']['reject'] = array (
+      '#type' => 'submit',
+      '#access' => TRUE,
+      '#value' => 'Reject and Return (still testing)',
+      '#weight' => 1000,
+      '#submit' => array('cehs_ts_reject'),
+      );
+    }
+    
     if ((($status == '1') && ($form['field_employee_approval']['und']['#default_value'] == 1))  || (!($status == '1') && !($form['field_employee_approval']['und']['#default_value'] == 0) && ((!in_array('payroll first admin', array_values($user->roles))) || (!in_array('payroll final admin', array_values($user->roles))) || (!in_array('payroll administrator', array_values($user->roles)))))) {
       // Second Stage — Node has been created. Supervisor not approved.
       $form['field_r01']['#disabled'] = TRUE;
@@ -383,6 +393,7 @@ $form['field_supervisor_approval']['#disabled'] = TRUE;
       $form['field_grant_09_perc']['#disabled'] = TRUE;
       $form['field_grant_10_perc']['#disabled'] = TRUE;
       $form['field_ts_grant_total']['#disabled'] = TRUE;
+      $form['actions']['submit']['#value'] = t('Approve and Send');
     }
     
     if ($status == '2') {
@@ -394,6 +405,17 @@ $form['field_supervisor_approval']['#disabled'] = TRUE;
     // That's it. Stop checking form ids.
     break;
   }
+}
+
+
+/**
+ * Fired when reject button is clicked by Supervisor.
+ */
+function cehs_ts_reject() {
+  if ( arg(0) == 'node' && is_numeric(arg(1))) {
+    $node = node_load(arg(1));
+  }
+  rules_invoke_component('rules_reject_timesheet', $node);
 }
 
 
