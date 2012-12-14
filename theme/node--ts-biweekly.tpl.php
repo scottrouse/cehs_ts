@@ -298,7 +298,7 @@
           <td><?php print render($content['field_grant_02_perc']); ?></td>
         </tr>
       <?php endif; ?>
-      <?php if ($isset(content['field_grant_03_ref'])): ?>
+      <?php if (isset($content['field_grant_03_ref'])): ?>
         <tr>
           <td><?php print render($content['field_grant_03_ref']); ?></td>
           <td><?php print render($content['field_grant_03_perc']); ?></td>
