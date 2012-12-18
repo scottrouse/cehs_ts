@@ -96,17 +96,10 @@
     
     <?php
       
-      $start_date_node = $node->field_pay_period_ref[0]['entity']->field_period_dates['und'][0]['value'];
-      
-      $pay_period_start3 = field_get_items('node', $node, 'field_period_dates');
-      
-      /* $start_date_raw = $pay_period_start3['0']['value']; */
-      
-      /* $start_date_raw $start_date_node; */
-      $start_date_raw = '2012-10-25 00:00:00';
-      
-      /* $start_date = strtotime($pay_period_start3['0']['value']); */
-      $start_date = strtotime($start_date_raw);
+      $pay_period_id = $node->field_pay_period_ref['und'][0]['target_id']; // Get the nid of the pay period
+      $pay_period_node = node_load($pay_period_id); // Load the pay period entity
+      $start_date_node = $pay_period_node->field_period_dates['und'][0]['value']; // Get the first date value from pay period node      
+      $start_date = strtotime($start_date_node); // Set start date for display on this node
       
 
     ?>
