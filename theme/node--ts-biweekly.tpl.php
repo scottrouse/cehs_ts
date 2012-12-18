@@ -117,36 +117,36 @@
       
       
       $day1 = $start_date;
-      $day2 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +1 day");
-      $day3 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +2 days");
-      $day4 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +3 days");
-      $day5 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +4 days");
-      $day6 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +5 days");
-      $day7 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +6 days");
-      $day8 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +7 days");
-      $day9 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +8 days");
-      $day10 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +9 days");
-      $day11 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +10 days");
-      $day12 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +11 days");
-      $day13 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +12 days");
-      $day14 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +13 days");
-      $day15 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +14 days");
-      $day16 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +15 days");
-      $day17 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +16 days");
-      $day18 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +17 days");
-      $day19 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +18 days");
-      $day20 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +19 days");
-      $day21 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +20 days");
-      $day22 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +21 days");
-      $day23 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +22 days");
-      $day24 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +23 days");
-      $day25 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +24 days");
-      $day26 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +25 days");
-      $day27 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +26 days");
-      $day28 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +27 days");
-      $day29 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +28 days");
-      $day30 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +29 days");
-      $day31 = strtotime(date("Y-m-d", strtotime($start_date_raw)) . " +30 days");
+      $day2 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +1 day");
+      $day3 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +2 days");
+      $day4 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +3 days");
+      $day5 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +4 days");
+      $day6 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +5 days");
+      $day7 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +6 days");
+      $day8 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +7 days");
+      $day9 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +8 days");
+      $day10 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +9 days");
+      $day11 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +10 days");
+      $day12 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +11 days");
+      $day13 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +12 days");
+      $day14 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +13 days");
+      $day15 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +14 days");
+      $day16 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +15 days");
+      $day17 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +16 days");
+      $day18 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +17 days");
+      $day19 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +18 days");
+      $day20 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +19 days");
+      $day21 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +20 days");
+      $day22 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +21 days");
+      $day23 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +22 days");
+      $day24 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +23 days");
+      $day25 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +24 days");
+      $day26 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +25 days");
+      $day27 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +26 days");
+      $day28 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +27 days");
+      $day29 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +28 days");
+      $day30 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +29 days");
+      $day31 = strtotime(date("Y-m-d", strtotime($start_date_node)) . " +30 days");
       
 
     
@@ -354,12 +354,21 @@
       	
       <?php print render($content['field_ts_status']) ?>	
       <?php print render($content['field_empl_approve_date']) ?>
-      <?php print render($content['field_sup_approve_date']) ?>
-      <?php print render($content['field_supervisor_comments']) ?>
-      <?php print render($content['field_admin_approve_date']) ?>
-      <?php print render($content['field_admin1_comments']) ?>
-      <?php print render($content['field_admin2_approve_date']) ?>
-      <?php print render($content['field_admin2_comments']) ?>
+      <fieldset class="ts-supervisor">
+        <legend>Supervisor</legend>
+        <?php print render($content['field_sup_approve_date']) ?>
+        <?php print render($content['field_supervisor_comments']) ?>
+      </fieldset>
+      <fieldset class="ts-admin1">
+        <legend>First Admin</legend>
+        <?php print render($content['field_admin_approve_date']) ?>
+        <?php print render($content['field_admin1_comments']) ?>
+      </fieldset>
+      <fieldset class="ts-admin2">
+        <legend>Final Admin</legend>
+        <?php print render($content['field_admin2_approve_date']) ?>
+        <?php print render($content['field_admin2_comments']) ?>
+      </fieldset>
       </fieldset>
   
   </div>
