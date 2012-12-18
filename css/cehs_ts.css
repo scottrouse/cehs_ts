@@ -51,6 +51,6 @@
 
 
 .form-disabled input.form-autocomplete, .form-disabled input.form-text, .form-disabled input.form-file, .form-disabled textarea.form-textarea, .form-disabled select.form-select {
-  color: #000;
+  color: #000 !important;
   font-weight: bold;
 }
