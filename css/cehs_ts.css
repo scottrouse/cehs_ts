@@ -39,7 +39,6 @@
 #ts-biweekly-node-form #edit-field-employee-name label, #ts-biweekly-node-form #edit-field-employee-id label, #ts-biweekly-node-form #edit-field-pay-period-ref label, #ts-biweekly-node-form #field-ts-grant-values label, #ts-biweekly-node-form #edit-field-ts-grant-total label {
   float: left;
   margin-right: 1em;
-  color: #3f3f3f;
 }
 
 .node-type-ts-biweekly .node-unpublished {
@@ -48,4 +47,10 @@
 
 .node-type-ts-biweekly .unpublished {
   display: none;
+}
+
+
+.form-disabled input.form-autocomplete, .form-disabled input.form-text, .form-disabled input.form-file, .form-disabled textarea.form-textarea, .form-disabled select.form-select {
+  color: #000;
+  font-weight: bold;
 }
