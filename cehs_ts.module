@@ -312,6 +312,7 @@ $form['field_supervisor_approval']['#disabled'] = TRUE;
       '#weight' => 1000,
       '#submit' => array('cehs_ts_reject'),
       );
+      
     }
     
     if ((($status == '1') && ($form['field_employee_approval']['und']['#default_value'] == 1))  || (!($status == '1') && !($form['field_employee_approval']['und']['#default_value'] == 0) && ((!in_array('payroll first admin', array_values($user->roles))) || (!in_array('payroll final admin', array_values($user->roles))) || (!in_array('payroll administrator', array_values($user->roles)))))) {
@@ -415,8 +416,14 @@ function cehs_ts_reject() {
   if ( arg(0) == 'node' && is_numeric(arg(1))) {
     $node = node_load(arg(1));
   }
-  rules_invoke_component('rules_reject_timesheet', $node);
+  /* rules_invoke_component('rules_reject_timesheet_clone', $node); */
+  drupal_set_message(t('You have rejected this Time Sheet. A message has been sent to the Employee asking them to review the Time Sheet and resubmit it for your approval. You will be notified when it has been resubmitted.'),'warning');
+  
+
+  
+  
 }
+
 
 
 /**
