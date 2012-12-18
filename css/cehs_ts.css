@@ -15,28 +15,33 @@
 }
 
 
-#ts-biweekly-node-form table.timesheet-table, #ts-biweekly-node-form table#grant-table {
+table.timesheet-table, table#grant-table, table.timesheet-table td, table#grant-table td, table.timesheet-table th, table#grant-table th {
   border-collapse: separate;
+  border: 1px solid #BEBFB9;
 }
 
-#ts-biweekly-node-form table.timesheet-table caption, #ts-biweekly-node-form table#grant-table caption {
+table.timesheet-table td, table#grant-table td, table.timesheet-table th, table#grant-table th {
+  padding: 0.2em 0.5em;
+}
+
+table.timesheet-table caption, table#grant-table caption {
   font-size: 1.3em;
   margin-bottom: 0.5em;
   font-weight: bold;
   margin-top: 1.5em;
 }
 
-#ts-biweekly-node-form table.timesheet-table td, #ts-biweekly-node-form table#grant-table td {
+table.timesheet-table td, table#grant-table td {
   border: 1px solid #BEBFB9;
   border-collapse: separate;
 }
 
-#ts-biweekly-node-form table.timesheet-table, #ts-biweekly-node-form .table-center th, #ts-biweekly-node-form table#grant-table, #ts-biweekly-node-form table#grant-table th {
+table.timesheet-table, .table-center th, table#grant-table, table#grant-table th {
   text-align: center;
   vertical-align: middle;
 }
 
-#ts-biweekly-node-form #edit-field-employee-name label, #ts-biweekly-node-form #edit-field-employee-id label, #ts-biweekly-node-form #edit-field-pay-period-ref label, #ts-biweekly-node-form #field-ts-grant-values label, #ts-biweekly-node-form #edit-field-ts-grant-total label {
+#edit-field-employee-name label, #edit-field-employee-id label, #edit-field-pay-period-ref label, #field-ts-grant-values label, #edit-field-ts-grant-total label {
   float: left;
   margin-right: 1em;
 }
@@ -53,4 +58,48 @@
 .form-disabled input.form-autocomplete, .form-disabled input.form-text, .form-disabled input.form-file, .form-disabled textarea.form-textarea, .form-disabled select.form-select {
   color: #000 !important;
   font-weight: bold;
+}
+
+
+.node-ts-biweekly .field-label-inline .field-label {
+  clear: left;
+}
+
+fieldset.ts-employee {
+  border: none;
+}
+
+
+/**
+ * Payroll Administration Page
+ */
+
+.view-timesheet-administration {
+  font-size: 80%;
+}
+
+.view-timesheet-administration table {
+  width: 100%;
+}
+
+.view-timesheet-administration td, .view-timesheet-administration th {
+  padding: 1px 2px;
+}
+
+.view-timesheet-administration th {
+  text-align: center;
+}
+
+.view-timesheet-administration td.active {
+  background: none;
+}
+
+
+.print-content {
+  color: #000 !important;
+}
+
+
+.print-site_name, .print-breadcrumb, .print-hr {
+  display: none;
 }

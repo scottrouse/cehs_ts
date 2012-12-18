@@ -85,13 +85,13 @@
 
   <div class="content"<?php print $content_attributes; ?>>
   
-    <fieldset>
+    <fieldset class="ts-employee">
       <?php print render($content['field_employee_name']) ?>
       <?php print render($content['field_employee_id']) ?>
       <?php print render($content['field_pay_period_ref']) ?>
     </fieldset>
     
-    <fieldset>
+    <fieldset class="ts-hours">
     	<legend>Hours</legend>
     
     <?php
@@ -356,7 +356,7 @@
   </fieldset>
   
   
-      <fieldset>
+      <fieldset class="ts-approvals">
       	<legend>Approvals</legend>
       	
       <?php print render($content['field_ts_status']) ?>	
