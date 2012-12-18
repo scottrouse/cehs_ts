@@ -39,6 +39,7 @@
 #ts-biweekly-node-form #edit-field-employee-name label, #ts-biweekly-node-form #edit-field-employee-id label, #ts-biweekly-node-form #edit-field-pay-period-ref label, #ts-biweekly-node-form #field-ts-grant-values label, #ts-biweekly-node-form #edit-field-ts-grant-total label {
   float: left;
   margin-right: 1em;
+  color: #3f3f3f;
 }
 
 .node-type-ts-biweekly .node-unpublished {
