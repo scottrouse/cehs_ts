@@ -95,10 +95,16 @@ fieldset.ts-employee {
 }
 
 
-.print-content {
-  color: #000 !important;
+
+
+
+.print-content, .print-content th {
+  color: #000;
 }
 
+.print-content fieldset.ts-supervisor {
+  margin-top: 1em;
+}
 
 .print-site_name, .print-breadcrumb, .print-hr {
   display: none;
