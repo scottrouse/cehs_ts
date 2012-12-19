@@ -254,7 +254,8 @@
 
   <fieldset class="ts-approvals">
   	<legend>Approvals</legend>
-    <?php print render($content['field_ts_status']) ?>	
+    <?php print render($content['field_ts_status']) ?>
+    <?php print render($content['field_employee_name']) ?>
     <?php print render($content['field_empl_approve_date']) ?>
     <fieldset class="ts-supervisor">
       <legend>Supervisor</legend>
